@@ -1,0 +1,53 @@
+.cards { 
+  &__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    width: 100%;
+
+    // Hover effect: show paragraph
+    &:hover .services__description p {
+      opacity: 1;
+      max-height: 200px;
+    }
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: var(--secondaryTitleColor);
+    padding: .625rem 0;
+    // font-size: .875rem;
+
+  }
+
+  &__description-title {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    // padding: .9375rem .9375rem 0 .9375rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  &__description p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity var(--duration) var(--transition), max-height var(--duration) var(--transition), margin-top var(--duration) var(--transition);
+    margin: 0;
+    padding-right: .3125rem;
+    padding-left: .3125rem;
+    padding-bottom: .3125rem;
+    padding-top: 0;
+    text-align: center;
+
+    font-size: .875rem;
+  }
+} 
+  

@@ -1,0 +1,72 @@
+// .media { 
+//     display: flex;
+//     position: relative;
+// }
+
+//     .media__img.media__img--mob-hide { 
+//         display: none;
+
+//         @include desktop { 
+//             display: flex;
+//         }
+//     }
+// .media__img--small  {
+//     position: absolute;
+//     width: 40%;
+//     z-index: 0;
+// }
+
+// .media__img--big  {
+//     // position: absolute;
+//     // width: 60%;
+//     z-index: 0;
+//     position: relative;
+//     overflow: visible;
+// }
+
+
+.media { 
+    position: relative;
+}
+
+
+.experience__badge { 
+    position: absolute;
+    right: -5%;
+    bottom: -5%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: .3125rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% 50% .625rem .625rem;
+    background-color: var(--accentColor);
+    height: 12.5rem;
+    width: 11.25rem;
+    color: var(--secondaryTitleColor);
+    & strong { 
+        font-size: 1.875rem;
+    }
+     & span { 
+        font-size: 1.125rem;;
+        text-align: center;
+    }
+
+}
+
+.rounded-image {
+  border-radius: 50% 50% .625rem .625rem;
+  overflow: hidden;
+  aspect-ratio: 1 / 1.1;
+//   position: relative;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+

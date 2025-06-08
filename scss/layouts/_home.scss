@@ -1,0 +1,260 @@
+.services {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+    @include desktop { 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+
+  &__content { 
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-card);
+
+    @include desktop { 
+        max-width: 64%;
+    }
+  }
+
+  &__item { 
+        @include mobile { 
+        flex-basis: calc((100% - var(--gap-card)) / 2);
+    }
+
+        @include tablet { 
+        flex-basis: calc((100% - (var(--gap-card) * 2)) / 3);
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+.about { 
+    &__container { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.875rem;
+
+        @include desktop { 
+            flex-direction: row;
+            gap: 6.25rem;
+        }
+    }
+
+    &__content { 
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+            @include desktop { 
+            
+            max-width: 50%;
+        }
+    }
+
+    &__media { 
+        position: relative;
+        @include desktop { 
+
+            &::before { 
+                content: "";
+                display: block;
+                width: 20.625rem;
+                height: 20.625rem;
+                background: url(/img/foretagsbild-pa-professror-ab-en-rormokare-i-uppsala-lan.jpg);
+                background-size: cover;
+                background-position: center;
+                position: absolute;
+                left: -20%;
+                bottom: -7%;
+                // z-index: -1;
+                border-radius: 50% 50% .625rem .625rem;
+                overflow: hidden;
+                aspect-ratio: 1 / 1;
+            }
+        }
+    }
+}
+
+
+
+
+
+.benefit {
+
+    &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+
+    @include desktop { 
+        flex-direction: row-reverse;
+        gap: 6.25rem;   
+        }
+   }
+
+   &__content { 
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        @include desktop { 
+            max-width: 45%;
+        }
+   }
+
+   &__media { 
+            @include desktop { 
+            max-width: 55%;
+        }
+   }
+
+   &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: start;
+    justify-content: center;
+    }
+
+    &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-card);
+}
+
+}
+
+
+.reviews {
+    &__container { 
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    &__content { 
+        @include desktop { 
+            max-width: 34.375rem;
+        }
+    }
+
+}
+
+
+
+
+.cta { 
+background: 
+   linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.5)), 
+   url("../img/bg-gta.jpg") center / cover no-repeat;
+    background-size: cover;
+
+    color: var(--secondaryTitleColor);
+
+    &__container { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        @include tablet { 
+            max-width: 50%;
+        }
+    }
+}
+
+
+
+.cards__img {
+  overflow: hidden;
+
+  img {
+    transition: transform 0.4s ease;
+  }
+}
+
+
+.blog {
+    &__container, &__content, &__list { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+    }
+
+    &__content { 
+        align-items: flex-start;
+    }
+
+    &__content { 
+        @include desktop { 
+            max-width: 40%;
+        }
+    }
+
+    &__media { 
+        @include desktop { 
+            max-width: 50%;
+        }
+    }
+
+    &__list { 
+        gap: var(--gap-card);
+
+        @include tablet { 
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__container {
+    @include tablet { 
+        flex-direction: row;
+        gap: 4.375rem;
+    }
+
+}
+.blog {
+}
+.blog
+.blog__list {
+}
+.blog__item {
+}
+
+
+}
+
+.blog__list {
+    display: flex;
+}
+
+.blog__item {
+    @include tablet { 
+        flex-basis: calc((100% - var(--gap-card)) / 2);
+    }
+}
+
+.cards__link:hover .cards__img img {
+  transform: scale(1.05);
+}

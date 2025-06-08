@@ -1,0 +1,39 @@
+.container {
+  margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+      padding: 0 31px;
+  }
+
+  @include mobile {
+      max-width: 480px;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+
+  @include tablet {
+      width: 768px;
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+
+  @include desktop {
+      width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+}
+.section {
+  margin: 0 auto;
+  padding: 3.125rem 0;
+
+  @include tablet {
+      padding: 6.25rem 0;
+  }
+
+  @include desktop {
+      padding: 9.375rem 0;
+  }
+}

@@ -1,0 +1,36 @@
+
+.button--cta {
+  background-color: var(--accentColor); 
+  color: white;
+  padding: 17px 1.25rem;
+  border-radius: 3.125rem;
+  max-width: 21.25rem;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+  transition: background-color var(--transition);;
+
+  &:hover {
+      color: white;
+  }
+}
+
+
+
+.btn { 
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.button--icon { 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .3125rem;
+}
+
+
+
+
