@@ -9,12 +9,10 @@
 <body>
     <header class="header"> 
         <div class="container header__container">
-            <!-- <div class="header__logo"> -->
             <a href="" class="header__logo">
                 <p class="visually-hidden">ProfessRör | Din rörmokare i Uppsala & Knivsta  - ProfessRör</p>
                 <img src="./img/logo.png" alt="Logo ProfessRör">
             </a>
-            <!-- </div> -->
 
             <!-- Mobile toggle -->
             <button class="menu-toggle" aria-label="Öppna meny" aria-expanded="false">
@@ -56,6 +54,7 @@
                     <!-- Priser (has submenu) -->
                     <li class="menu__item menu__item--has-children">
                     <button class="menu__link" aria-expanded="false">
+
                         Priser
 
                         <svg class="menu__arrow" width="10" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +73,23 @@
                     </ul>
                     </li>
 
-                    <li class="menu__item"><a class="menu__link link" href="#">Områden</a></li>
+                    <li class="menu__item menu__item--has-children">
+                    <button class="menu__link" aria-expanded="false">
+
+                        Områden
+
+                    <svg class="menu__arrow" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L1 9" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="#" class="link">Rörmokare Uppsala</a></li>
+                        <li><a href="#" class="link">Rörmokare Knivsta</a></li>
+                    </ul>
+                    </li>
+
                     <li class="menu__item"><a class="menu__link link" href="#">Om oss</a></li>
                     <li class="menu__item"><a class="menu__link link" href="#">Kontakt</a></li>
                 </ul>
@@ -85,12 +100,12 @@
             <div class="header__contact contact">
                 <ul class="contact__list list">
                     <li class="contact__item">
-                        <a href="mailto:info@professror.se?subject=Offertförfrågan" class="link contact__link">
+                        <a href="mailto:kontakt@professror.se?subject=Offertförfrågan" class="link contact__link">
                         <svg class="icon-email" width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.70833 1.08333H1.29167C0.785406 1.08333 0.375 1.45643 0.375 1.91667V6.08333C0.375 6.54357 0.785406 6.91667 1.29167 6.91667H7.70833C8.21459 6.91667 8.625 6.54357 8.625 6.08333V1.91667C8.625 1.45643 8.21459 1.08333 7.70833 1.08333Z" stroke="#ED161F" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M0.375 1.91667L4.5 4.41667L8.625 1.91667" stroke="#ED161F" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <p>info@professror.se</p>
+                        <p>kontakt@professror.se</p>
                         </a>
                     </li>
 
@@ -99,7 +114,7 @@
                         <svg class="icon-phone" width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.99956 7.06527L7.89269 8.19386C7.89308 8.30567 7.87334 8.41633 7.83473 8.51877C7.79612 8.62121 7.73949 8.71316 7.66848 8.78874C7.59746 8.86432 7.51362 8.92187 7.42232 8.95768C7.33102 8.9935 7.23428 9.0068 7.1383 8.99674C6.07379 8.86077 5.05126 8.4388 4.15188 7.76432C3.31626 7.14726 2.6075 6.32506 2.07557 5.35569C1.48847 4.30871 1.12106 3.11667 1.00281 1.87522C0.994078 1.76319 1.00573 1.65028 1.03702 1.54381C1.06831 1.43734 1.11853 1.33969 1.18444 1.25718C1.25034 1.17467 1.33046 1.10915 1.41959 1.06486C1.50872 1.02057 1.60488 0.998497 1.70184 1.00008H2.73999C2.90793 0.998162 3.07074 1.06715 3.19808 1.19419C3.32542 1.32123 3.40859 1.49764 3.43209 1.69055C3.47708 2.11608 3.56359 2.52956 3.68817 2.92699C3.73473 3.07067 3.74481 3.22683 3.71721 3.37695C3.68961 3.52708 3.62549 3.66487 3.53245 3.77402L3.09296 4.28385C3.58559 5.28887 4.30291 6.12101 5.16927 6.69248L5.60875 6.18266C5.70284 6.07472 5.82163 6.00034 5.95104 5.96832C6.08045 5.93631 6.21506 5.948 6.33892 6.00201C6.68151 6.14653 7.03794 6.24689 7.40476 6.29907C7.57105 6.32634 7.72313 6.42282 7.83264 6.57054C7.94215 6.71826 8.00162 6.90713 7.99997 7.10195L7.99956 7.06527Z" stroke="#FA0909" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <p>018 262 262</p>
+                        <p>018 26 22 62</p>
                         </a>
                     </li>
                 </ul>
@@ -109,22 +124,44 @@
 
         </div>
     </header>
-
     <main>
-        <!-- <section class="hero section">
-            <h1 class="title-h1">Hero description</h1>
-        </section> -->
+        <section class="hero section">
+            <picture class="hero__img">
+                <!-- Mobile first: до 767px -->
+                <source srcset="/img/hero__img-mob.webp" type="image/webp" media="(max-width: 767px)">
+                <!-- Desktop: від 768px -->
+                <source srcset="/img/hero__img.webp" type="image/webp" media="(min-width: 768px)">
+                <!-- Fallback -->
+                <img 
+                    src="/img/hero__img.jpg" 
+                    alt="Två VVS-tekniker står framför företagsbil med logotyp." 
+                    loading="lazy" 
+                    decoding="async">
+                </picture>
+            <div class="hero__overlay"></div>
+            <div class="container hero__container">
+                <div class="hero__top">
+                   <h1 class="title__h1 hero__title">Rörmokare Uppsala & Knivsta</h1>
+                   <h2 class="hero__subtitle">VVS jour 24/7 – Sveriges bästa rörmokare – Topp 10 enligt Reco.se</h2>
+                </div>
 
+                <div class="hero__buttom">
+                <h3 class="hero__description">ProfessRör är ett familjeägt VVS-företag med tre generationers erfarenhet. Vi hjälper både privatpersoner och företag i Uppsala & Knivsta – dygnet runt.</h3>
+                <div class="button-wrapper hero__button">
+                    <a href="#" class="button button--cta btn">Läs våra kundrecensioner</a>
+                    <a href="#" class="button button--cta button--secondary btn">Se våra intervjuer i media</a>
+                </div>
+                </div>
+                
+                
+            </div>
+        </section>
 
         <section class="services section">
             <div class="container services__container">
                 <div class="services__content">
                 <h2 class="title__h2 title--center--mob">Våra VVS-tjänster i  Uppsala & Knivsta</h2>
-                <a href="#" class="button button--cta btn desk-btn">Show all services</a>
-
                 </div>
-
-
                 <ul class="services__list cards list">
                     <li class="services__item cards__item">
                         <div class="services__img cards__img">
@@ -140,21 +177,6 @@
                             <p>Har du fått stopp i avloppet eller toaletten? ProfessRör erbjuder effektiv avloppsrensning och hjälp med stopp i rören i Knivsta, Uppsala.</p>
                         </div>
                     </li>
-                                        <li class="services__item cards__item">
-                        <div class="services__img cards__img">
-                            <img 
-                                src="./img/foretagsbild-pa-professror-ab-ett-vvs-foretag-i-knivsta.jpg" 
-                                alt="Stopp i avlopp" 
-                                loading="lazy" 
-                                decoding="async">
-                        </div>
-
-                        <div class="services__description cards__description">
-                            <h3 class="services__description-title cards__description-title">Stopp i avlopp</h3>
-                            <p>Har du fått stopp i avloppet eller toaletten? ProfessRör erbjuder effektiv avloppsrensning och hjälp med stopp i rören i Knivsta, Uppsala.</p>
-                        </div>
-                    </li>
-
                     <li class="services__item cards__item">
                         <div class="services__img cards__img">
                             <img 
@@ -185,7 +207,22 @@
                         </div>
                     </li>
 
-                                        <li class="services__item cards__item">
+                    <li class="services__item cards__item">
+                        <div class="services__img cards__img">
+                            <img 
+                                src="./img/foretagsbild-pa-professror-ab-ett-vvs-foretag-i-knivsta.jpg" 
+                                alt="Stopp i avlopp" 
+                                loading="lazy" 
+                                decoding="async">
+                        </div>
+
+                        <div class="services__description cards__description">
+                            <h3 class="services__description-title cards__description-title">Stopp i avlopp</h3>
+                            <p>Har du fått stopp i avloppet eller toaletten? ProfessRör erbjuder effektiv avloppsrensning och hjälp med stopp i rören i Knivsta, Uppsala.</p>
+                        </div>
+                    </li>
+
+                    <li class="services__item cards__item">
                         <div class="services__img cards__img">
                             <img 
                                 src="./img/foretagsbild-pa-professror-ab-ett-vvs-foretag-i-knivsta.jpg" 
@@ -216,10 +253,9 @@
                     </li>
                 </ul>
 
-                <a href="#" class="button button--cta btn mob-btn">Show all services</a>
+                <a href="#" class="button button--cta btn services__btn ">Show all services</a>
             </div>
         </section>
-
 
         <section class="about section">
             <div class="container about__container">
@@ -463,38 +499,197 @@
                         </a>
                     </li>
                 </ul>
-                <a href="#" class="button button--cta btn mob-btn">Offertförfrågan</a>
+                <a href="#" class="button button--cta btn mob-btn blog__btn">Offertförfrågan</a>
                 </div>
                 
             </div>
         </section>
+
+        <section class="faq-section section">
+            <div class="container faq-section__container">
+                <h2 class="title__h2 title--center--mob faq-section__title">Vanliga frågor & svar – Rörmokare Uppsala & Knivsta</h2>
+                    <div class="faq">
+                    <details class="faq__item">
+                        <summary class="faq__question">Vad kostar det att anlita en rörmokare i Uppsala eller Knivsta?</summary>
+                        <p class="faq__answer">Priset beror på jobbet, men vi erbjuder alltid fasta priser på många installationer. Du hittar våra priser här på hemsidan. ProfessRör är känt för tydlighet och rimliga kostnader – inga överraskningar. </p>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">Hur snabbt kan ni komma vid ett akut VVS-problem? </summary>
+                        <p class="faq__answer">Vi erbjuder jourhjälp i både Uppsala och Knivsta. I akuta fall kan vi ofta vara på plats samma dag. Ring oss direkt – vi svarar snabbt och prioriterar akuta ärenden. </p>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">Är ni auktoriserade VVS-installatörer? </summary>
+                        <p class="faq__answer">Ja, ProfessRör är ett auktoriserat VVS-företag enligt Säker Vatten. Vi följer alla branschregler och säkerställer alltid ett tryggt och hållbart resultat för ditt hem. </p>
+                    </details>
+
+
+                    <details class="faq__item">
+                        <summary class="faq__question">Vad säger era kunder om er? </summary>
+                        <p class="faq__answer">Vi är stolta över att ha blivit utsedda till en av Sveriges Top 10 rörmokare 2025 av Reco. Det är ett kvitto på vårt arbete, vår kommunikation och vårt kundfokus. Läs gärna vad våra kunder skriver om oss här på sidan. </p>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">Arbetar ni med både stora och små uppdrag? </summary>
+                        <p class="faq__answer">Ja, vi hjälper både privatpersoner och företag – från byte av blandare till större VVS-installationer. Inget jobb är för litet eller för stort.  </p>
+                    </details>
+
+
+                    <details class="faq__item">
+                        <summary class="faq__question">Täckar ni hela Uppsala län?  </summary>
+                        <p class="faq__answer">Vi utgår från Knivsta och arbetar i hela Uppsala län – inklusive centrala Uppsala, Knivsta, Vänge, Alsike och omkringliggande områden. Osäker om vi kan hjälpa dig? Hör av dig!</p>
+                    </details>
+                    </div>
+                </div>
+        </section>
+
+        <section class="support-highlight section">
+            <div class="container support-highlight__container">
+                <h2 class="title__h2 title--center support-highlight__title">Lokalt VVS-stöd i Uppsala & Knivsta</h2>
+                <h3 class="title__h3  title--center support-highlight__sub-title">På ProfessRör hjälper vi både privatpersoner och företag med allt inom VVS-– från akuta problem till installationer och service. Vi är lokalt förankrade, och du får alltid personlig hjälp när du behöver den</h3>
+                <ul class="support-highlight__list list">
+                    <li class="support-highlight__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 32 32">
+                        <path d="M 28.796875 6.1347656 A 1.0001 1.0001 0 0 0 28.257812 6.2929688 C 22.174649 10.08797 17.189059 15.185127 13.029297 21.216797 C 10.925384 18.33288 8.5825295 15.811668 5.7167969 14.136719 A 1.0001 1.0001 0 1 0 4.7089844 15.863281 C 7.5979308 17.551798 10.05178 20.18558 12.244141 23.419922 A 1.0001 1.0001 0 0 0 13.90625 23.408203 C 18.081279 17.074764 23.131242 11.848869 29.316406 7.9902344 A 1.0001 1.0001 0 0 0 28.796875 6.1347656 z"></path>
+                        </svg>
+                        <p>Snabb service i närområdet – Vi är snabbt på plats i både Uppsala och Knivsta.</p>
+                    </li>
+                    <li class="support-highlight__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 32 32">
+                        <path d="M 28.796875 6.1347656 A 1.0001 1.0001 0 0 0 28.257812 6.2929688 C 22.174649 10.08797 17.189059 15.185127 13.029297 21.216797 C 10.925384 18.33288 8.5825295 15.811668 5.7167969 14.136719 A 1.0001 1.0001 0 1 0 4.7089844 15.863281 C 7.5979308 17.551798 10.05178 20.18558 12.244141 23.419922 A 1.0001 1.0001 0 0 0 13.90625 23.408203 C 18.081279 17.074764 23.131242 11.848869 29.316406 7.9902344 A 1.0001 1.0001 0 0 0 28.796875 6.1347656 z"></path>
+                        </svg>
+                        <p>Lokala rörmokare du kan lita på – Vi känner till området och vet vad som krävs. </p>
+                    </li>
+
+                    <li class="support-highlight__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 32 32">
+                        <path d="M 28.796875 6.1347656 A 1.0001 1.0001 0 0 0 28.257812 6.2929688 C 22.174649 10.08797 17.189059 15.185127 13.029297 21.216797 C 10.925384 18.33288 8.5825295 15.811668 5.7167969 14.136719 A 1.0001 1.0001 0 1 0 4.7089844 15.863281 C 7.5979308 17.551798 10.05178 20.18558 12.244141 23.419922 A 1.0001 1.0001 0 0 0 13.90625 23.408203 C 18.081279 17.074764 23.131242 11.848869 29.316406 7.9902344 A 1.0001 1.0001 0 0 0 28.796875 6.1347656 z"></path>
+                        </svg>
+                        <p>Flexibla lösningar för dina behov – Oavsett projektets storlek.</p>
+                    </li>
+
+                </ul>
+                <a href="#" class="button button--cta btn ">Kontakta oss</a>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <div class="container certifications__container">
+            <h2 class="visually-hidden">Certifications and Memberships</h2>
+            <ul class="certifications__list list">
+              <li class="certifications__item">
+                <img 
+                    src="./img/foretagsbild-pa-professror-ab-ett-vvs-foretag-i-knivsta-2025 1.jpg" 
+                    alt="Stopp i avlopp" 
+                    loading="lazy" 
+                    decoding="async">
+              </li>
+
+              <li class="certifications__item">
+                <img 
+                    src="./img/foretagsbild-pa-professror-ab-ett-vvs-foretag-i-knivsta 1.jpg" 
+                    alt="Stopp i avlopp" 
+                    loading="lazy" 
+                    decoding="async">
+              </li>
+
+
+              <li class="certifications__item">
+                <img 
+                    src="./img/bild-pa-professror-ab-rormokare-i-uppsala-lan 1.jpg" 
+                    alt="Stopp i avlopp" 
+                    loading="lazy" 
+                    decoding="async">
+              </li>
+
+              <li class="certifications__item">
+                <img 
+                    src="./img/foretagsbild-pa-professror-ab-rormokare-i-uppsala-lan 2.jpg" 
+                    alt="Stopp i avlopp" 
+                    loading="lazy" 
+                    decoding="async">
+              </li>
+            </ul>
+            </div>
+        </section>
+
+        <section class="company">
+            <div class="container company__container">
+                <h2 class="visually-hidden">Över 800 genomförda VVS-jobb i Uppsala & Knivsta</h2>
+                <div class="counter-wrapper">
+                    <div class="counter">
+                        <span class="">800+</span>
+                        <p>Genomförda jobb av ProfessRör AB</p>
+                    </div>
+                </div>
+
+                <div class="company__contact">
+                    <ul class="contact__list--company list">
+                    <li class="contact__item--company">
+                        <a href="mailto:kontakt@professror.se?subject=Offertförfrågan" class="link contact__link--company">
+                        <svg class="icon-email--company" width="15" height="14" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.70833 1.08333H1.29167C0.785406 1.08333 0.375 1.45643 0.375 1.91667V6.08333C0.375 6.54357 0.785406 6.91667 1.29167 6.91667H7.70833C8.21459 6.91667 8.625 6.54357 8.625 6.08333V1.91667C8.625 1.45643 8.21459 1.08333 7.70833 1.08333Z" stroke="#ED161F" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.375 1.91667L4.5 4.41667L8.625 1.91667" stroke="#ED161F" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>kontakt@professror.se</p>
+                        </a>
+                    </li>
+
+                    <li class="contact__item--company">
+                        <a href="tel:018262262" class="link contact__link--company">
+                        <svg class="icon-phone--company" width="15" height="16" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.99956 7.06527L7.89269 8.19386C7.89308 8.30567 7.87334 8.41633 7.83473 8.51877C7.79612 8.62121 7.73949 8.71316 7.66848 8.78874C7.59746 8.86432 7.51362 8.92187 7.42232 8.95768C7.33102 8.9935 7.23428 9.0068 7.1383 8.99674C6.07379 8.86077 5.05126 8.4388 4.15188 7.76432C3.31626 7.14726 2.6075 6.32506 2.07557 5.35569C1.48847 4.30871 1.12106 3.11667 1.00281 1.87522C0.994078 1.76319 1.00573 1.65028 1.03702 1.54381C1.06831 1.43734 1.11853 1.33969 1.18444 1.25718C1.25034 1.17467 1.33046 1.10915 1.41959 1.06486C1.50872 1.02057 1.60488 0.998497 1.70184 1.00008H2.73999C2.90793 0.998162 3.07074 1.06715 3.19808 1.19419C3.32542 1.32123 3.40859 1.49764 3.43209 1.69055C3.47708 2.11608 3.56359 2.52956 3.68817 2.92699C3.73473 3.07067 3.74481 3.22683 3.71721 3.37695C3.68961 3.52708 3.62549 3.66487 3.53245 3.77402L3.09296 4.28385C3.58559 5.28887 4.30291 6.12101 5.16927 6.69248L5.60875 6.18266C5.70284 6.07472 5.82163 6.00034 5.95104 5.96832C6.08045 5.93631 6.21506 5.948 6.33892 6.00201C6.68151 6.14653 7.03794 6.24689 7.40476 6.29907C7.57105 6.32634 7.72313 6.42282 7.83264 6.57054C7.94215 6.71826 8.00162 6.90713 7.99997 7.10195L7.99956 7.06527Z" stroke="#FA0909" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>018 26 22 62</p>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="reco-widget">
+            <div class="container">
+               <h2 class="visually-hidden">Rekommenderad VVS-installatör med 4.9 i betyg på Reco</h2>
+               <iframe src="https://widget.reco.se/v2/venues/4052206/horizontal/large?inverted=false&border=true" title="ProfessRör AB - Omdömen på Reco" height="60" style="width:100%;border:0;display:block;overflow:hidden;" data-reactroot></iframe>
+            </div>
+        </section>
+
+        <section class="about recommendations section">
+            <div class="container about__container recommendations__container">
+                <div class="recommendations__content about__content">
+                    <h2 class="title__h2">Rekommenderade & uppmärksammade</h2>
+                    <h3 class="title__h3" >Läs vad tidningarna skriver om oss och upptäck hundratals äkta kundomdömen som bevisar varför så många väljer oss i Knivsta & Uppsala</h3>
+                        <div class="button-wrapper">
+                            <a href="#" class="button button--cta btn">Läs våra kundrecensioner</a>
+                            <a href="#" class="button button--cta button--secondary btn">Se våra intervjuer i media</a>
+                        </div>
+                </div>
+
+                <div class="recommendations__media media">
+                    <div class="rounded-image">
+                        <img 
+                            src="./img/foretagsbild-pa-professror-ab-ett-vvs-foretag-i-knivsta.jpg" 
+                            alt="Stopp i avlopp" 
+                            loading="lazy" 
+                            decoding="async">
+                    </div>
+                    <div class="experience__badge" aria-hidden="true">
+                        <strong>35+</strong>
+                        <span>års erfarenhet</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </main>
     
     <footer>
 
     </footer>
-
-
-    <script>
-
-document.querySelector('.menu-toggle').addEventListener('click', function () {
-  this.classList.toggle('is-active');
-  document.querySelector('.menu').classList.toggle('is-open');
-  this.setAttribute('aria-expanded', this.classList.contains('is-active'));
-});
-
-
-document.querySelectorAll('.menu__item--has-children > .menu__link').forEach(button => {
-  button.addEventListener('click', (e) => {
-
-    if (window.innerWidth >= 1200) return;
-
-    const expanded = button.getAttribute('aria-expanded') === 'true';
-    button.setAttribute('aria-expanded', !expanded);
-    button.nextElementSibling.classList.toggle('is-open');
-    e.preventDefault();
-  });
-});
-    </script>
+    <script src="./js/menuOpen.js"></script>
 </body>
 </html>

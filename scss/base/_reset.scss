@@ -15,7 +15,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   color: var(--titleColor);
-  // background-color: var(--primary-background-color);
   margin: 0;
 }
 img {
@@ -29,4 +28,10 @@ img {
 .link {
   text-decoration: none;
   color: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

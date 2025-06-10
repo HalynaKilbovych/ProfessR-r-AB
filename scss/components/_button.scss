@@ -9,11 +9,19 @@
   font-weight: bold;
   display: block;
   text-transform: uppercase;
-  transition: background-color var(--transition);;
+  transition: background-color var(--transition);
+  border: .0625rem solid var(--accentColor);
 
   &:hover {
       color: white;
   }
+  
+}
+
+.button--secondary { 
+      background-color: transparent; 
+      color: var(--accentColor);
+      border: .0625rem solid var(--accentColor);
 }
 
 
