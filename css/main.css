@@ -342,14 +342,26 @@ img {
 .header {
   background-color: var(--backgroundColor);
   color: var(--secondaryTitleColor);
+  padding: 0.625rem 0;
   font-size: 0.75rem;
-}
-.header__logo {
-  max-width: 10.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 @media screen and (min-width: 768px) {
   .header__logo {
     max-width: 10.625rem;
+  }
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 250px;
   }
 }
 

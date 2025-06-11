@@ -2,14 +2,28 @@
 .header {
   background-color: var(--backgroundColor);
   color: var(--secondaryTitleColor);
+  padding: .625rem 0;
   font-size: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   &__logo {
-    max-width: 10.5rem;
+    // max-width: 10.5rem;
 
     @include tablet {
       max-width: 10.625rem;
     }
+  }
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  display: block;
+
+  @include desktop { 
+      width: 250px;
   }
 }
 
