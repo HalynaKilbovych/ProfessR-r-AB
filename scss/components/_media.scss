@@ -5,7 +5,7 @@
 
 .experience__badge { 
     position: absolute;
-    right: 0%;
+    left: -5%;
     bottom: -5%;
     z-index: 2;
     display: flex;
@@ -19,7 +19,7 @@
     width: 11.25rem;
     color: var(--secondaryTitleColor);
     & strong { 
-        font-size: 1.875rem;
+        font-size: 3.125rem;
     }
      & span { 
         font-size: 1.125rem;;
