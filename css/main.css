@@ -112,7 +112,7 @@ img {
   --titleColor: #0F0F0F;
   --secondaryTitleColor: #FFFFFF;
   --textColor: #242424;
-  --accentColor: #FA0909;
+  --accentColor: #b30000;
   --backgroundColor: #111319;
   --background-transparent: #222222e7;
   --gap: 30px;
@@ -202,7 +202,7 @@ img {
 .button--white {
   background-color: transparent;
   color: var(--secondaryTitleColor);
-  border: 0.0625rem solid var(--secondaryTitleColor);
+  border: 0.0625rem solid var(--accentColor);
 }
 
 .btn {
