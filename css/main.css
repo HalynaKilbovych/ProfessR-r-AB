@@ -202,7 +202,7 @@ img {
 .button--white {
   background-color: transparent;
   color: var(--secondaryTitleColor);
-  border: 0.0625rem solid var(--accentColor);
+  border: 0.0625rem solid var(--secondaryTitleColor);
 }
 
 .btn {
