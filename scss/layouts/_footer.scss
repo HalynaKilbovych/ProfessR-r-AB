@@ -1,0 +1,78 @@
+.site-footer {
+  background-color: var(--backgroundColor);
+  color: var(--secondaryTitleColor);
+  padding: 3.125rem 0rem;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.footer__top-wrap { 
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    justify-content: space-between;
+
+        @include tablet { 
+        width: 100%;
+        flex-direction: row;
+    }
+}
+.footer__branding {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+}
+.footer__logo {
+    width: 13.75rem;
+}
+.footer__description {
+    max-width: 31.25rem;
+}
+
+.footer__center-wrap { 
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    @include tablet { 
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: .3125rem;
+}
+.footer__nav {
+}
+.footer__nav-list {
+}
+.footer__certifications {
+    width: 100%;
+
+    @include tablet { 
+        width: 50%;
+    }
+}
+.footer__legal {
+}
+.footer__legal-nav {
+}
+.footer__cta {
+}
+.btn {
+}
+.btn--primary {
+}
+.footer__reviews {
+}

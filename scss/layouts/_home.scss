@@ -177,8 +177,8 @@
 
     &__media { 
         position: relative;
-        @include desktop { 
-
+        @include tablet { 
+            max-width: 50%;
             // &::before { 
             //     content: "";
             //     display: block;
@@ -476,6 +476,7 @@ aspect-ratio: 5 / 4;
         display: flex;
         gap: .625rem;
         flex-wrap: wrap;
+        justify-content: center;
 
         @include desktop { 
             gap: 1.875rem;
@@ -491,6 +492,14 @@ aspect-ratio: 5 / 4;
         align-items: center;
         justify-content: center;
         border-radius: .3125rem;
+
+        @include desktop { 
+            flex-basis: calc((100% - var(--gap)* 3) / 4);
+        }
+    } 
+
+        &__item--footer{
+        flex-basis: calc((100% - var(--gap-card)*2) / 3);
 
         @include desktop { 
             flex-basis: calc((100% - var(--gap)* 3) / 4);

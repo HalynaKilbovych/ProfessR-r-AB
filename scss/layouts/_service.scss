@@ -66,7 +66,9 @@
 .features__list { 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: var(--gap);
+    flex-wrap: wrap;
 
     @include tablet { 
         flex-direction: row;
@@ -92,4 +94,17 @@
         text-align: center;
         flex-basis: calc((100% - var(--gap)* 2) / 3);
     }
+}
+
+.features__card.features__card--two-column {
+            @include tablet { 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-basis: calc((100% - var(--gap)) / 2);
+    }
+ }
+
+.features__card-img { 
+    height: 11.25rem;
 }
