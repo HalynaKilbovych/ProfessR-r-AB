@@ -14,7 +14,7 @@
 
   &__top { 
   @include desktop {
-      max-width: 60%;
+      max-width: 66%;
       text-align: left;
   }
   }
@@ -502,7 +502,7 @@ aspect-ratio: 5 / 4;
         flex-basis: calc((100% - var(--gap-card)*2) / 3);
 
         @include desktop { 
-            flex-basis: calc((100% - var(--gap)* 3) / 4);
+            flex-basis: calc((100% - var(--gap)* 4) / 5);
         }
     } 
 }
