@@ -137,3 +137,14 @@
 .features__card-img-big {
   height: 15.625rem;
 }
+
+.list-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.list-icon__item {
+  display: flex;
+  gap: 0.3125rem;
+}
