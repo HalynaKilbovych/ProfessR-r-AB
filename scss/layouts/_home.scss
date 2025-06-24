@@ -169,6 +169,14 @@
       flex-direction: row;
       gap: 6.25rem;
     }
+
+    &--reverse {
+      flex-direction: column-reverse;
+      @include desktop {
+        flex-direction: row-reverse;
+        gap: 6.25rem;
+      }
+    }
   }
 
   &__content {

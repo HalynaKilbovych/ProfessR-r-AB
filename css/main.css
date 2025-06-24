@@ -971,6 +971,15 @@ address {
     gap: 6.25rem;
   }
 }
+.about__container--reverse {
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1200px) {
+  .about__container--reverse {
+    flex-direction: row-reverse;
+    gap: 6.25rem;
+  }
+}
 .about__content {
   display: flex;
   flex-direction: column;
@@ -1499,4 +1508,5 @@ address {
 .list-icon__item {
   display: flex;
   gap: 0.3125rem;
+  align-items: center;
 }
