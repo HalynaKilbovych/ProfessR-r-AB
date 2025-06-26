@@ -297,6 +297,12 @@ address {
   width: 8rem;
   color: var(--secondaryTitleColor);
 }
+@media screen and (min-width: 1200px) {
+  .experience__badge {
+    height: 160px;
+    width: 144px;
+  }
+}
 .experience__badge strong {
   font-size: 2.8125rem;
 }
@@ -309,7 +315,6 @@ address {
   border-radius: 50% 50% 0.625rem 0.625rem;
   overflow: hidden;
   aspect-ratio: 1/1.1;
-  width: 18.75rem;
 }
 .rounded-image img {
   width: 100%;
