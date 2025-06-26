@@ -273,6 +273,9 @@ address {
     padding: 9.375rem 0;
   }
 }
+.section--price {
+  padding: 1.875rem 0;
+}
 
 .media {
   position: relative;
@@ -290,15 +293,15 @@ address {
   justify-content: center;
   border-radius: 50% 50% 0.625rem 0.625rem;
   background-color: var(--accentColor);
-  height: 12.5rem;
-  width: 11.25rem;
+  height: 9rem;
+  width: 8rem;
   color: var(--secondaryTitleColor);
 }
 .experience__badge strong {
-  font-size: 3.125rem;
+  font-size: 2.8125rem;
 }
 .experience__badge span {
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -306,6 +309,7 @@ address {
   border-radius: 50% 50% 0.625rem 0.625rem;
   overflow: hidden;
   aspect-ratio: 1/1.1;
+  width: 18.75rem;
 }
 .rounded-image img {
   width: 100%;
@@ -626,7 +630,7 @@ address {
   color: var(--accentColor);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .mob-btn {
     display: none;
   }
@@ -635,7 +639,7 @@ address {
 .desk-btn {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .desk-btn {
     display: block;
   }
@@ -965,16 +969,21 @@ address {
   align-items: center;
   gap: 1.875rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .about__container {
     flex-direction: row;
+    gap: 3.125rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__container {
     gap: 6.25rem;
   }
 }
 .about__container--reverse {
   flex-direction: column-reverse;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .about__container--reverse {
     flex-direction: row-reverse;
     gap: 6.25rem;
@@ -1004,9 +1013,16 @@ address {
   flex-direction: column;
   gap: 1.875rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .benefit__container {
     flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 3.125rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefit__container {
     gap: 6.25rem;
   }
 }
@@ -1345,6 +1361,17 @@ address {
   }
 }
 
+.button-wrapper--column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+@media screen and (min-width: 1200px) {
+  .button-wrapper--column {
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .recommendations__content {
     max-width: 60%;
@@ -1509,4 +1536,96 @@ address {
   display: flex;
   gap: 0.3125rem;
   align-items: center;
+}
+
+.pris-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+@media screen and (min-width: 768px) {
+  .pris-cards {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pris-cards__item {
+    flex-basis: calc((100% - var(--gap)) / 2);
+  }
+}
+
+.pris-cards__img {
+  aspect-ratio: auto;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.price-table thead {
+  background-color: #f4f4f8;
+  font-weight: bold;
+}
+
+.price-table th,
+.price-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.price-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.price-table tbody tr:hover {
+  background-color: #e6e6ec;
+}
+
+@media (max-width: 768px) {
+  .price-table thead {
+    display: none;
+  }
+  .price-table,
+  .price-table tbody,
+  .price-table tr,
+  .price-table td {
+    display: block;
+    width: 100%;
+  }
+  .price-table tr {
+    margin-bottom: 1.5rem;
+    background: #f9f9fb;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .price-table td {
+    padding: 0.8rem 1rem;
+    text-align: left;
+    border: none;
+    position: relative;
+  }
+  .price-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #444;
+  }
+}
+.price__media {
+  overflow: hidden;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .content-50 {
+    flex-basis: 50%;
+  }
 }

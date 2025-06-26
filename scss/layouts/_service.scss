@@ -150,3 +150,104 @@
   gap: 0.3125rem;
   align-items: center;
 }
+
+
+.pris-cards { 
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+
+    @include tablet {
+      flex-direction: row;
+    }
+}
+
+.pris-cards__item { 
+    @include tablet {
+      flex-basis: calc((100% - var(--gap)) / 2);
+    }
+}
+
+.pris-cards__img  { 
+    aspect-ratio: auto;
+
+}
+
+
+ .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+  }
+
+  .price-table thead {
+    background-color: #f4f4f8;
+    font-weight: bold;
+  }
+
+  .price-table th,
+  .price-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+
+  .price-table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+
+  .price-table tbody tr:hover {
+    background-color: #e6e6ec;
+  }
+
+  @media (max-width: 768px) {
+    .price-table thead {
+      display: none;
+    }
+
+    .price-table, 
+    .price-table tbody, 
+    .price-table tr, 
+    .price-table td {
+      display: block;
+      width: 100%;
+    }
+
+    .price-table tr {
+      margin-bottom: 1.5rem;
+      background: #f9f9fb;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .price-table td {
+      padding: 0.8rem 1rem;
+      text-align: left;
+      border: none;
+      position: relative;
+    }
+
+    .price-table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      margin-bottom: 0.3rem;
+      color: #444;
+    }
+  }
+
+
+.price__media { 
+  overflow: hidden;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-50 { 
+  @include tablet { 
+  flex-basis: 50%;
+  }
+
+}

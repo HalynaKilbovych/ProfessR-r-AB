@@ -165,14 +165,18 @@
     align-items: center;
     gap: 1.875rem;
 
-    @include desktop {
+    @include tablet { 
       flex-direction: row;
+      gap: 3.125rem;
+    }
+
+    @include desktop {
       gap: 6.25rem;
     }
 
     &--reverse {
       flex-direction: column-reverse;
-      @include desktop {
+      @include tablet {
         flex-direction: row-reverse;
         gap: 6.25rem;
       }
@@ -217,8 +221,14 @@
     flex-direction: column;
     gap: 1.875rem;
 
-    @include desktop {
+    @include tablet {
       flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 3.125rem;
+    }
+
+    @include desktop { 
       gap: 6.25rem;
     }
   }
@@ -565,6 +575,16 @@
   gap: 0.625rem;
 
   @include tablet {
+    flex-direction: row;
+  }
+}
+
+.button-wrapper--column { 
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+
+  @include desktop {
     flex-direction: row;
   }
 }

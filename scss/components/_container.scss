@@ -29,4 +29,8 @@
   @include desktop {
       padding: 9.375rem 0;
   }
+
+  &--price { 
+    padding: 1.875rem 0;
+  }
 }
