@@ -1580,6 +1580,7 @@ address {
 @media screen and (min-width: 768px) {
   .pris-cards__item {
     flex-basis: calc((100% - var(--gap)) / 2);
+    padding: 10% 0.625rem;
   }
 }
 .pris-cards__img {
@@ -1598,6 +1599,9 @@ address {
 .pris-cards__description-price {
   font-size: 1.375rem;
   font-weight: 300;
+}
+.pris-cards__description-title {
+  text-align: center;
 }
 .pris-cards__btn {
   position: absolute;
