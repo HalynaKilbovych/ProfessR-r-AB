@@ -176,6 +176,8 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap);
+  align-items: center;
+  justify-content: center;
 
     @include tablet {
       flex-direction: row;
@@ -183,7 +185,7 @@
   &__item { 
   background-color: #f6f6f6;
   border-radius: 1.25rem;
-  padding: 3.125rem 1.25rem;
+  padding: 14% 1.25rem;
   @include tablet {
       flex-basis: calc((100% - var(--gap)) / 2);
     }
@@ -200,13 +202,30 @@
     gap: .3125rem;
     align-items: center;
     justify-content: center;
-    margin-top: 1.25rem;
+    margin: 1.25rem 0;
   }
 
   &__description-price { 
     font-size: 1.375rem;
     font-weight: 300;
-    margin-bottom: 1.25rem;
+
+  }
+
+  &__btn { 
+    position: absolute;
+    position: absolute;
+    bottom: 0;
+    padding: 1.25rem;
+    border-top: 1px solid var(--accentColor);
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
+.price__btn { 
+  margin-top: 1.875rem;
+  margin-left: auto;
+  margin-right: auto;
+}

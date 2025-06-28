@@ -33,4 +33,7 @@
   &--price { 
     padding: 1.875rem 0;
   }
+  &--price.last {
+  padding-bottom: 6.25rem;
+}
 }
