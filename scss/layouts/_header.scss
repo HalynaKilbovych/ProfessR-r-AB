@@ -304,6 +304,18 @@
 }
 
 
+header > div > a.button.button--cta.btn.desk-btn { 
+    display: none;
+
+    @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: block;
+  }
+}
+
 // ✅ ICONS
 .icon-email {
     width: 1.25rem;
