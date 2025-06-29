@@ -1584,6 +1584,20 @@ address {
     padding: 10% 0.625rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  .pris-cards__item--small {
+    flex-basis: calc((100% - var(--gap) * 3) / 4);
+    padding: 7% 0.625rem;
+  }
+}
+.pris-cards__item--small .pris-cards__img {
+  height: 18.75rem;
+}
+.pris-cards__item--small .pris-cards__img img {
+  height: 18.75rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .pris-cards__img {
   width: 80%;
   margin: 0 auto;

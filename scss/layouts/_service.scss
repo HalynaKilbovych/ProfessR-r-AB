@@ -192,6 +192,22 @@
         padding: 10% .625rem;
     }
   }
+
+  &__item--small{ 
+
+          @include desktop {
+          flex-basis: calc((100% - var(--gap) * 3) / 4);
+        padding: 7% .625rem;
+    }
+  }
+  &__item--small &__img { 
+    height: 18.75rem;
+  }
+
+  &__item--small &__img img { 
+    height: 18.75rem;
+    object-fit: contain;
+  }
   &__img { 
     width: 80%;
     margin: 0 auto;
