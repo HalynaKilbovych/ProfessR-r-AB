@@ -1566,6 +1566,7 @@ address {
   gap: var(--gap);
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .pris-cards {

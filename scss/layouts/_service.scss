@@ -178,6 +178,7 @@
   gap: var(--gap);
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 
     @include tablet {
       flex-direction: row;
