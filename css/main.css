@@ -1598,6 +1598,32 @@ address {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.pris-cards__item--img {
+  padding: 0 0 14%;
+}
+@media screen and (min-width: 768px) {
+  .pris-cards__item--img {
+    padding: 0 0 8%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pris-cards__item--img {
+    padding: 0 0 5%;
+  }
+}
+.pris-cards__item--img .pris-cards__description-title {
+  font-size: 1rem;
+}
+.pris-cards__item--img .pris-cards__img {
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+}
+.pris-cards__item--img .pris-cards__img img {
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .pris-cards__img {
   width: 80%;
   margin: 0 auto;
