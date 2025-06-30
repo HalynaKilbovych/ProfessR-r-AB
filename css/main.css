@@ -932,6 +932,74 @@ header > div > a.button.button--cta.btn.desk-btn {
   }
 }
 
+.hero-v2 {
+  background-color: #1E1E1E;
+  color: #f6f6f6;
+}
+
+.hero-v2__top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-v2__title {
+  font-size: 1.875rem;
+}
+
+.hero-v2__subtitle {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.hero-v2__img-mob {
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.hero-v2__buttom {
+  margin-top: 0.625rem;
+  display: flex;
+  gap: 0.625rem;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .hero-v2__buttom {
+    gap: 2rem;
+  }
+}
+
+.hero-v2__description {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero-v2__description {
+    max-width: 65%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.hero-v2__button {
+  justify-content: center;
+}
+
+.hero-v2__img-desk {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .hero-v2__img-desk {
+    display: block;
+  }
+}
+
 .hero-service__overlay {
   position: absolute;
   top: 0;
