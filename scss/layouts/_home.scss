@@ -13,8 +13,9 @@
   }
 
   &__top {
+    background: #000000a8;
     @include desktop {
-      max-width: 66%;
+      max-width: 76%;
       text-align: left;
     }
   }

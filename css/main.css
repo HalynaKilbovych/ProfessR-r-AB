@@ -853,9 +853,12 @@ header > div > a.button.button--cta.btn.desk-btn {
     padding: 12.5rem 0;
   }
 }
+.hero__top {
+  background: rgba(0, 0, 0, 0.6588235294);
+}
 @media screen and (min-width: 1200px) {
   .hero__top {
-    max-width: 66%;
+    max-width: 76%;
     text-align: left;
   }
 }
