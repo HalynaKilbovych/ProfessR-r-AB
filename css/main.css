@@ -235,6 +235,10 @@ address {
   gap: 0.3125rem;
 }
 
+button, input, option, select {
+  font-family: "Montserrat", sans-serif;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -916,7 +920,7 @@ header > div > a.button.button--cta.btn.desk-btn {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4745098039);
+  background: rgba(0, 0, 0, 0.6588235294);
 }
 @media screen and (min-width: 768px) {
   .hero__overlay {
@@ -1674,4 +1678,101 @@ header > div > a.button.button--cta.btn.desk-btn {
   margin-top: 1.875rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.order-form__container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f6f6f6;
+  border-radius: 8px;
+}
+.order-form__title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form__group {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap);
+}
+.form__group--grid {
+  flex-wrap: wrap;
+}
+.form__group--grid .form__field {
+  flex-basis: calc((100% - var(--gap)) / 2);
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.form__field--checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+.form__label {
+  margin-bottom: 0.5rem;
+}
+.form__input, .form__select, .form__textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form__radio-group {
+  display: flex;
+  gap: 1rem;
+}
+.form__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.form__submit {
+  margin: 0 auto;
+}
+.form__separator {
+  border: none;
+  border-top: 1px solid #c9c9c9;
+  margin: 1.375rem 0;
+}
+
+.rot-details {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+.rot-details__type {
+  margin-bottom: 1rem;
+}
+.rot-details__buttons {
+  display: flex;
+  gap: 1rem;
+}
+.rot-details__label {
+  margin-bottom: 0.625rem;
+  display: inline-block;
+}
+.rot-details__button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+.rot-details__button.is-active {
+  border-color: var(--accentColor);
+  background-color: #ffeaea;
+}
+.rot-details__fields {
+  margin-top: 1rem;
+}
+.rot-details__fields--villa.is-hidden, .rot-details__fields--bostadsratt.is-hidden {
+  display: none;
+}
+.rot-details.is-hidden {
+  display: none;
 }
