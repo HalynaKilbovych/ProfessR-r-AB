@@ -203,27 +203,34 @@
         </div>
     </header>
     <main>
-        <section class="hero hero__service section">
-        <picture class="hero__img">
-            <source srcset="./img/team-photo-1.webp" type="image/webp" media="(max-width: 767px)">
-            <source srcset="./img/team-photo-1.webp" type="image/webp" media="(min-width: 768px)">
-            <img src="./img/team-photo-1.webp" alt="Bild som visar sju produktkategorier för VVS-installationer med fast pris: blandare, toaletter, vattenutkastare och vattenmätarkonsol." decoding="sync">
-        </picture>
-        <div class="hero__overlay"></div>
-        <div class="container hero__container">
-            <div class="hero__top">
-            <h1 class="title__h1 hero__title">Installerat & klart till fasta priser i Uppsala & Knivsta</h1>
-            <h2 class="hero__subtitle">Välkommen till ProfessRör! Här hittar du fasta priser på våra vanligaste VVS-produkter och installationer. </h2>
+    <section class="hero section">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <div class="hero__top">
+                    <h1 class="title__h1 hero__title" style="font-size: clamp(1.85rem, 5vw, 4.2rem);">Installerat & klart till fasta priser i Uppsala & Knivsta</h1>
+                    <div class="hero__img-mob">
+                        <img 
+                        src="./img/team-photo-1.webp" 
+                        alt="Bild som visar sju produktkategorier för VVS-installationer med fast pris: blandare, toaletter, vattenutkastare och vattenmätarkonsol." 
+                        fetchpriority="high"
+                        width="768" height="1024"
+                        >
+                    </div>
+                    <h2 class="hero__subtitle center">Välkommen till ProfessRör! Här hittar du fasta priser på våra vanligaste VVS-produkter och installationer. </h2>
+                    <h3 class="hero__description">Vi har gjort det enkelt för dig att välja bland kvalitetsprodukter med professionell installation inkluderad i priset. Priserna är tydliga, inklusive moms och med ROT-avdrag redan avdraget. Inga överraskningar – bara installerat och klart.</h3>
+                    
+                    </div>
+
+                    <div class="hero__buttom">
+                    <div class="button-wrapper hero__button">
+                        <a href="#" class="button button--cta btn">LFÅ EN GRATIS OFFERT</a>
+                        <a href="#" class="button button--cta button--white btn">VANLIGA FRÅGOR</a>
+                    </div>
+                    </div>
+                </div>
             </div>
-            <div class="hero__buttom">
-            <h3 class="hero__description">Vi har gjort det enkelt för dig att välja bland kvalitetsprodukter med professionell installation inkluderad i priset. Priserna är tydliga, inklusive moms och med ROT-avdrag redan avdraget. Inga överraskningar – bara installerat och klart.</h3>
-            <div class="button-wrapper hero__button">
-                <a href="#cta" class="button button--cta btn">Boka installation</a>
-                <a href="#faq" class="button button--cta button--white btn">Vanliga frågor</a>
-            </div>
-            </div>
-        </div>
-        </section>
+    </section>
+
         
         <section class="services price section">
             <div class="container services__container">

@@ -1,225 +1,73 @@
+
+
 .hero {
-  position: relative;
-  color: #fff;
-  overflow: hidden;
-  padding: 3.75rem 0;
-  width: 100%;
-  @include tablet {
-    padding: 9.375rem 0;
-  }
-
-  @include desktop {
-    padding: 12.5rem 0;
-  }
-
-  &__top {
-    background: #000000a8;
-    @include desktop {
-      max-width: 76%;
-      text-align: left;
-    }
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 7.5rem;
-  }
-
-  &__buttom {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-
-  &__title {
-    text-align: center;
-    margin-bottom: 1.25rem;
-    @include tablet {
-      text-align: left;
-    }
-  }
-
-  &__subtitle {
-    font-size: 1.25rem;
-    font-weight: 400;
-    text-transform: uppercase;
-
-    @include tablet {
-      max-width: 60%;
-    }
-  }
-
-  &__subtitle.center {
-    text-align: center;
-
-    @include tablet {
-      text-align: left;
-    }
-  }
-
-  &__description {
-    font-size: 1.125rem;
-    font-weight: 400;
-    @include tablet {
-      text-align: left;
-      max-width: 60%;
-    }
-  }
-
-  &__img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-
-  &__overlay {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: #000000a8;
-    @include tablet {
-      background: #000000;
-      background: linear-gradient(
-        90deg,
-        rgb(0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.34) 100%
-      );
-    }
-  }
-}
-
-
-.hero-v2 {
   background-color: #1E1E1E;
   color: #f6f6f6;
-}
-.section {
-}
-.container {
-}
-.hero-v2__container {
 
-  // @include desktop { 
-  //   display: flex;
-  //   gap: 3.125rem;
-  //   justify-content: space-between;
-  //   align-items: center;
-
-  // }
-}
-.hero-v2__content {
-
-
-  // @include desktop { 
-  //   width: 75%;
-
-  // }
-}
-.hero-v2__top {
+  &__top {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
   align-items: center;
   justify-content: center;
   text-align: center;
+  }
 
-  //   @include desktop { 
-  // justify-content: left;
-  // text-align: left;
-  // align-items: start;
-
-  // }
-}
-.title__h1 {
-}
-.hero-v2__title {
-  font-size: 1.875rem;
-  
-}
-.hero-v2__subtitle {
-  font-weight: 400;
-  font-size: 1rem;
-}
-.center {
-}
-.hero-v2__img-mob {
-  border-radius: 1.25rem;
-  overflow: hidden;
-  // @include desktop{ 
-  //   display: none;
-  // }
-}
-.hero-v2__buttom {
-  margin-top: .625rem;
+  &__buttom {
+  margin-top: 1.25rem;
   display: flex;
-  gap: .625rem;
+  gap: 1.25rem;
   flex-direction: column;
 
     @include desktop{ 
   gap: 2rem;
   }
 
-}
-.hero-v2__description {
+  }
+  &__title--home {
+    max-width: 18.75rem;
+      @include tablet { 
+    max-width: 90%;
+  }
+  }
+  &__subtitle {
+  font-weight: 400;
   font-size: 1rem;
+
+  @include desktop { 
+    max-width: 60%;
+  }
+ }
+
+   &__description {
   font-weight: 400;
   text-align: center;
-
-  @include desktop{ 
-    max-width: 65%;
-    text-align: center;
-    margin: 0 auto;
+    font-size: 1rem;
+  margin: 0 auto;
+  @include desktop { 
+    max-width: 70%;
   }
+ }
+  &__img-mob {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  } 
   
-}
-
-.hero-v2__button { 
-  justify-content: center;
-}
-
-.hero-v2__img-desk {
+  &__img-desk {
     border-radius: 1.25rem;
-      overflow: hidden;
-  display: none;
+    overflow: hidden;
+    display: none;
     @include desktop{ 
     display: block;
   }
+ }
+
+ &__button { 
+  margin: 0 auto;
 }
 
-
-
-
-.hero-service__overlay {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background: #00000091;
-  @include tablet {
-    background: #000000;
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.335) 50%,
-      rgba(0, 0, 0, 0.34) 100%
-    );
-  }
 }
 
-.hero__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
 
 .services {
   &__container {
