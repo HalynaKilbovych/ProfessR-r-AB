@@ -2,6 +2,14 @@
   background-color: #1E1E1E;
   color: #f6f6f6;
 
+  &__container {
+        @include desktop{ 
+  display: flex;
+  align-items: center;
+  gap: 3.125rem;
+  }
+  }
+
   &__top {
   display: flex;
   flex-direction: column;
@@ -9,6 +17,13 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+          @include desktop{ 
+  align-items: start;
+  justify-content: left;
+  text-align: left;
+
+  }
   }
 
   &__buttom {
@@ -19,6 +34,8 @@
 
     @include desktop{ 
   gap: 2rem;
+
+  
   }
 
   }
@@ -31,11 +48,14 @@
   &__subtitle {
   font-weight: 400;
   font-size: 1rem;
+ }
 
-  @include desktop { 
+ &__subtitle--home { 
+    @include desktop { 
     max-width: 60%;
   }
  }
+
 
    &__description {
   font-weight: 400;
@@ -43,25 +63,48 @@
     font-size: 1rem;
   margin: 0 auto;
   @include desktop { 
+    text-align: left;
+    margin: 0 auto 0 0;
+  }
+ }
+
+  &__description--home { 
+    @include desktop { 
     max-width: 70%;
   }
  }
   &__img-mob {
   border-radius: 1.25rem;
   overflow: hidden;
+
+      @include desktop{ 
+    display: none;
+  }
   } 
-  
+  &__img-mob img { 
+      border-radius: 1.25rem;
+  }
+
+    &__img-desk img { 
+      border-radius: 1.25rem;
+  }
   &__img-desk {
     border-radius: 1.25rem;
     overflow: hidden;
     display: none;
     @include desktop{ 
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
  }
 
  &__button { 
   margin: 0 auto;
+
+  @include desktop { 
+        margin: 0 auto 0 0;
+  }
 }
 
 }
@@ -210,6 +253,10 @@
     align-items: center;
     justify-content: center;
     gap: var(--gap-card);
+
+    & svg { 
+      min-width: 1.25rem;
+    }
   }
 }
 
@@ -540,5 +587,15 @@
 .recommendations__content {
   @include desktop {
     max-width: 60%;
+  }
+}
+
+.blog__content { 
+
+  @include tablet { 
+        max-width: 75%;
+  }
+  @include desktop {
+    max-width: 85%;
   }
 }
