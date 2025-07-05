@@ -104,9 +104,153 @@
 }
 </script>
 
-
   <!-- Styles -->
-  <link rel="stylesheet" href="../css/main.min.css">
+
+    <style>
+        .hero {
+    background-color: #1E1E1E;
+    color: #f6f6f6;
+    padding: 2rem 1rem;
+    overflow: hidden;
+    }
+
+    .hero__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+    @media (min-width: 1024px) {
+    .hero__container {
+        display: flex;
+        align-items: center;
+        gap: 3.125rem;
+    }
+    }
+
+    .hero__top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    @media (min-width: 1024px) {
+    .hero__top {
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    }
+
+    .hero__buttom {
+    margin-top: 1.25rem;
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    }
+
+    @media (min-width: 1024px) {
+    .hero__buttom {
+        gap: 2rem;
+    }
+    }
+
+    .hero__title--home {
+    max-width: 18.75rem;
+    }
+
+    @media (min-width: 768px) {
+    .hero__title--home {
+        max-width: 90%;
+    }
+    }
+
+    /* Subtitle */
+    .hero__subtitle {
+    font-weight: 400;
+    font-size: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+    .hero__subtitle--home {
+        max-width: 60%;
+    }
+    }
+
+
+    .hero__description {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    }
+
+    @media (min-width: 1024px) {
+    .hero__description {
+        text-align: left;
+        margin: 0;
+    }
+    }
+
+    @media (min-width: 1024px) {
+    .hero__description--home {
+        max-width: 70%;
+    }
+    }
+
+    .hero__img-mob {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    }
+
+    .hero__img-mob img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+    }
+
+    @media (min-width: 1024px) {
+    .hero__img-mob {
+        display: none;
+    }
+    }
+
+    .hero__img-desk {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    display: none;
+    }
+
+    .hero__img-desk img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+    }
+
+    @media (min-width: 1024px) {
+    .hero__img-desk {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
+    .hero__button {
+    margin: 0 auto;
+    }
+
+    @media (min-width: 1024px) {
+    .hero__button {
+        margin: 0;
+    }
+    }
+    </style>
+   <link rel="stylesheet" href="../css/main.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../css/main.min.css"></noscript>
 </head>
 <body>
     <header class="header"> 
