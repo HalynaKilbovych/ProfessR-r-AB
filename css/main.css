@@ -222,11 +222,13 @@ address {
   font-weight: bold;
   display: block;
   text-transform: uppercase;
-  transition: background-color var(--transition);
+  transition: 250ms all var(--transition);
   border: 0.0625rem solid var(--accentColor);
 }
-.button--cta:hover {
+.button--cta:hover, .button--cta:focus {
   color: white;
+  background-color: #940000;
+  border: 0.0625rem solid #940000;
 }
 
 .button--secondary {
@@ -239,6 +241,11 @@ address {
   background-color: transparent;
   color: var(--secondaryTitleColor);
   border: 0.0625rem solid var(--secondaryTitleColor);
+}
+.button--white:hover, .button--white:focus {
+  color: var(--accentColor);
+  background-color: #e6e6e6;
+  border: 0.0625rem solid #e6e6e6;
 }
 
 .btn {
@@ -303,6 +310,10 @@ button, input, option, select {
 }
 .section--policy {
   padding: 4.375rem 0;
+}
+.section--contact {
+  padding: 4.375rem 0 2rem 0;
+  background: #f9f9f9;
 }
 
 .media {
@@ -964,6 +975,14 @@ header > div > a.button.button--cta.btn.desk-btn {
   }
 }
 
+.hero--bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(30, 30, 30, 0.65)), url("../img/hero__img.webp") center/cover no-repeat;
+}
+
+.hero--artiklar {
+  background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(30, 30, 30, 0.65)), url("../img/artiklar-1.webp") center/cover no-repeat;
+}
+
 .services__container {
   display: flex;
   flex-direction: column;
@@ -1553,6 +1572,44 @@ header > div > a.button.button--cta.btn.desk-btn {
   line-height: 1.5;
 }
 
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-list {
+    gap: 3rem;
+  }
+}
+.contact-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.contact-list__icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+}
+.contact-list__icon svg {
+  width: 100%;
+  height: auto;
+}
+.contact-list__content {
+  display: flex;
+  flex-direction: column;
+}
+.contact-list__content .contact-list__label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 1.125rem;
+}
+.contact-list__content .link {
+  font-size: 1rem;
+}
+
 .problem {
   background-color: #f6f6f6;
 }
@@ -1677,6 +1734,11 @@ header > div > a.button.button--cta.btn.desk-btn {
     align-items: center;
     text-align: center;
     flex-basis: calc((100% - var(--gap) * 2) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__card--four {
+    flex-basis: calc((100% - var(--gap) * 3) / 4);
   }
 }
 

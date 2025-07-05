@@ -110,6 +110,19 @@
 }
 
 
+.hero--bg { 
+background:
+  linear-gradient(rgba(0, 0, 0, 0.614), rgba(30, 30, 30, 0.65)),
+  url('../img/hero__img.webp') center/cover no-repeat;
+}
+
+.hero--artiklar { 
+  background:
+  linear-gradient(rgba(0, 0, 0, 0.614), rgba(30, 30, 30, 0.65)),
+  url('../img/artiklar-1.webp') center/cover no-repeat;
+
+}
+
 .services {
   &__container {
     display: flex;
@@ -742,6 +755,50 @@
       flex: 1 1 45%;
       margin-bottom: 0.5rem;
       line-height: 1.5;
+    }
+  }
+}
+
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  @include tablet {
+    gap: 3rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    .contact-list__label {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      font-size: 1.125rem;
+    }
+
+    .link {
+      font-size: 1rem;
     }
   }
 }
