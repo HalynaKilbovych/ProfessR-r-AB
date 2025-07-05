@@ -138,21 +138,25 @@
   <!-- Styles -->
 
     <style>
-    /* Базовий фон і колір тексту */
-    .hero {
+    body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    }
+    body.loaded {
+    opacity: 1;
+    }
+        .hero {
     background-color: #1E1E1E;
     color: #f6f6f6;
     padding: 2rem 1rem;
     overflow: hidden;
     }
 
-    /* Контейнер */
     .hero__container {
     max-width: 1200px;
     margin: 0 auto;
     }
 
-    /* На десктопі: flex-рядок із gap */
     @media (min-width: 1024px) {
     .hero__container {
         display: flex;
@@ -161,7 +165,6 @@
     }
     }
 
-    /* Топова частина (заголовки) */
     .hero__top {
     display: flex;
     flex-direction: column;
@@ -179,7 +182,6 @@
     }
     }
 
-    /* Кнопки-блок */
     .hero__buttom {
     margin-top: 1.25rem;
     display: flex;
@@ -216,7 +218,7 @@
     }
     }
 
-    /* Опис */
+
     .hero__description {
     font-weight: 400;
     font-size: 1rem;
@@ -237,7 +239,6 @@
     }
     }
 
-    /* Мобільна картинка */
     .hero__img-mob {
     border-radius: 1.25rem;
     overflow: hidden;
@@ -256,7 +257,6 @@
     }
     }
 
-    /* Десктопна картинка */
     .hero__img-desk {
     border-radius: 1.25rem;
     overflow: hidden;
@@ -278,7 +278,6 @@
     }
     }
 
-    /* Кнопка вирівнювання */
     .hero__button {
     margin: 0 auto;
     }
@@ -1116,5 +1115,10 @@
         </div>
     </footer>
     <script src="./js/menuOpen.js" defer></script>
+    <script>
+  window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+  });
+</script>
 </body>
 </html>
