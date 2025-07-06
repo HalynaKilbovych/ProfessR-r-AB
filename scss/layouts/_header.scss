@@ -36,6 +36,11 @@
   padding-bottom: .625rem;
 }
 
+.header__container p { 
+  background-color: var(--backgroundColor);
+  color: var(--secondaryTitleColor);
+}
+
 
 // ✅ BURGER MENU TOGGLE
 .menu-toggle {
