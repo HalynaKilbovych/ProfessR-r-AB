@@ -440,6 +440,11 @@ button, input, option, select {
   padding-bottom: 0.625rem;
 }
 
+.header__container p {
+  background-color: var(--backgroundColor);
+  color: var(--secondaryTitleColor);
+}
+
 .menu-toggle {
   width: 32px;
   height: 32px;
@@ -1285,6 +1290,11 @@ header > div > a.button.button--cta.btn.desk-btn {
   animation: fadeIn 0.3s ease-in-out;
 }
 
+.faq__answer p {
+  background: #f6f6f6;
+  color: #1E1E1E;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -1608,6 +1618,15 @@ header > div > a.button.button--cta.btn.desk-btn {
 }
 .contact-list__content .link {
   font-size: 1rem;
+}
+
+.publish-wrap p, .publish-wrap a {
+  font-size: 0.875rem;
+  color: var(--accentColor);
+}
+
+.interviews {
+  background-color: #f9f9f9;
 }
 
 .problem {
