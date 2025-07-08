@@ -3,10 +3,15 @@
   color: #f6f6f6;
 
   &__container {
-        @include desktop{ 
+        @include tablet{ 
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 3.125rem;
+  }
+
+          @include desktop{ 
+      flex-direction: row;
   }
   }
 
@@ -76,6 +81,7 @@
   &__img-mob {
   border-radius: 1.25rem;
   overflow: hidden;
+  display: block;
 
       @include desktop{ 
     display: none;
