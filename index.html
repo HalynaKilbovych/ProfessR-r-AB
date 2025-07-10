@@ -140,11 +140,17 @@
     <link rel="preload" href="./fonts/montserrat-v30-latin-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
     <style>
-        .hero {
+    .hero {
     background-color: #1E1E1E;
     color: #f6f6f6;
     padding: 2rem 1rem;
     overflow: hidden;
+    }
+
+        @media (max-width: 1024px) {
+    .hero {
+        min-height: 90vh;
+    }
     }
 
     .hero__container {

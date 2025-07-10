@@ -1,5 +1,5 @@
 .hero {
-  min-height: 90vh;
+
   background-color: #1E1E1E;
   color: #f6f6f6;
 
@@ -11,7 +11,7 @@
   gap: 3.125rem;
   }
 
-          @include desktop{ 
+    @include desktop{ 
       flex-direction: row;
   }
   }
