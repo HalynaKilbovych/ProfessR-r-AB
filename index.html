@@ -314,7 +314,7 @@
     <noscript><link rel="stylesheet" href="./css/main.min.css"></noscript> -->
 
     <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
-
+<link rel="preload" as="image" href="./img/hero__img-mob-360.webp">
     <link rel="preload" href="./css/main.min.css" as="style" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="./css/main.min.css"></noscript>
 </head>
@@ -447,13 +447,16 @@
                     <div class="hero__top">
                     <h1 class="title__h1 hero__title hero__title--home" style="font-size: clamp(1.85rem, 5vw, 3.2rem);">Rörmokare Uppsala & Knivsta</h1>
                     <div class="hero__img-mob">
-                        <img 
-                        src="./img/hero__img-mobOpt.webp" 
-                        alt="Två VVS-tekniker står framför företagsbil med logotyp." 
-                        fetchpriority="high"
-                        width="560"
-                        height="339"
-                        >
+                         <picture>
+                            <source srcset="./img/hero__img-mob-360.webp" media="(max-width: 400px)">
+                            <source srcset="./img/hero__img-mobOpt.webp" media="(max-width: 768px)">
+                            <img 
+                            src="./img/hero__img-mobOpt.webp" 
+                            alt="Två VVS-tekniker står framför företagsbil med logotyp." 
+                            fetchpriority="high"
+                            width="560"
+                            height="339">
+                        </picture>
                     </div>
                     <h2 class="hero__subtitle hero__subtitle--home center">VVS jour 24/7 – Sveriges bästa rörmokare – Topp 10 enligt Reco.se</h2>
                     </div>
