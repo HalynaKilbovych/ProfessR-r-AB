@@ -562,8 +562,9 @@ button, input, option, select {
     </style>
    <!-- <link rel="stylesheet" href="./css/main.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="./css/main.min.css"></noscript> -->
-
-    <link rel="stylesheet" href="./css/main.min.css">
+<link rel="preload" href="./css/main.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="./css/main.min.css"></noscript>
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 <body>
     <header class="header"> 
