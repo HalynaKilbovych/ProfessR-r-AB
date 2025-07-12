@@ -140,7 +140,10 @@
     <link rel="preload" href="./fonts/montserrat-v30-latin-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-v30-latin-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-v30-latin-100.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+    <link rel="stylesheet" href="./css/hero.min.css"> 
+    <link rel="stylesheet" href="./css/main.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="./css/main.min.css"></noscript>
 
 </head>
 <body>
@@ -266,7 +269,7 @@
         </div>
     </header>
     <main>
-        <section class="hero section">
+        <section class="hero section" style="height: 46.875rem; width: 100%;" >
             <div class="container hero__container">
                 <div class="hero__content content-50">
                     <div class="hero__top">
@@ -278,7 +281,7 @@
                             <img 
                             src="./img/hero__img-mobOpt.webp" 
                             alt="Två VVS-tekniker står framför företagsbil med logotyp." 
-                            fetchpriority="high"
+                            loading="lazy" 
                             width="560"
                             height="339">
                         </picture>
@@ -299,7 +302,7 @@
                         <img 
                         src="./img/hero__img.webp" 
                         alt="Två VVS-tekniker står framför företagsbil med logotyp." 
-                        fetchpriority="high"
+                        loading="lazy" 
                         width="1000" height="606"
                         >
                 </div>
@@ -397,9 +400,9 @@
                             <div class="services__img cards__img">
                             <picture>
                                 <source srcset="./img/service-page-9-2-360.webp" media="(max-width: 400px)">
-                                <source srcset="./img/service-page-9-2.webp.webp" media="(max-width: 768px)">
+                                <source srcset="./img/service-page-9-2.webp" media="(max-width: 768px)">
                                 <img 
-                                src="./img/service-page-9-2.webp.webp" 
+                                src="./img/service-page-9-2.webp" 
                                 alt="Installation av vattenpump och tryckkärl i trädgård i Uppsala eller Knivsta" 
                                 loading="lazy" 
                                 decoding="async" width="700" height="700">
@@ -983,11 +986,11 @@
                 <!-- 4. Certifications & Trust Logos -->
                 <div class="footer__certifications">
                     <ul class="certifications__list certifications__list--footer list">
-                        <li class="certifications__item certifications__item--footer"><img src="./img/company-logo-2.svg" alt="Säker Vatten certifiering"></li>
-                        <li class="certifications__item certifications__item--footer"><img src="./img/company-logo-1.webp" alt="VVS Företagen medlem" width="260" height="53"></li>
-                        <li class="certifications__item certifications__item--footer"><img src="./img/company-logo-3.svg" alt="Installatörsföretagen auktorisation"></li>
-                        <li class="certifications__item certifications__item--footer"><img src="./img/company-logo-4-1.webp" alt="Reco – Topp 10 i Sverige" width="308" height="308"></li>
-                        <li class="certifications__item certifications__item--footer"><img src="./img/company-logo-4.svg" alt="Reco – Rekommenderad av kunder"></li>
+                        <li class="certifications__item certifications__item--footer"><img src="./img/company-logo-2.svg" alt="Säker Vatten certifiering" loading="lazy" ></li>
+                        <li class="certifications__item certifications__item--footer"><img src="./img/company-logo-1.webp" alt="VVS Företagen medlem" width="260" height="53" loading="lazy" ></li>
+                        <li class="certifications__item certifications__item--footer"><img src="./img/company-logo-3.svg" alt="Installatörsföretagen auktorisation" loading="lazy" ></li>
+                        <li class="certifications__item certifications__item--footer"><img src="./img/company-logo-4-1.webp" alt="Reco – Topp 10 i Sverige" width="308" height="308" loading="lazy" ></li>
+                        <li class="certifications__item certifications__item--footer"><img src="./img/company-logo-4.svg" alt="Reco – Rekommenderad av kunder" loading="lazy" ></li>
 
                     </ul>
                 </div>

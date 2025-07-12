@@ -1,0 +1,141 @@
+.hero {
+  min-height: 46.875rem;
+  background-color: #1E1E1E;
+  color: #f6f6f6;
+
+  &__container {
+        @include tablet{ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.125rem;
+  }
+
+          @include desktop{ 
+      flex-direction: row;
+  }
+  }
+
+  &__top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+          @include desktop{ 
+  align-items: start;
+  justify-content: left;
+  text-align: left;
+
+  }
+  }
+
+  &__buttom {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+
+    @include desktop{ 
+  gap: 2rem;
+
+  
+  }
+
+  }
+  &__title--home {
+    max-width: 18.75rem;
+      @include tablet { 
+    max-width: 90%;
+  }
+  }
+  &__subtitle {
+  font-weight: 400;
+  font-size: 1rem;
+ }
+
+ &__subtitle--home { 
+    @include desktop { 
+    max-width: 60%;
+  }
+ }
+
+
+   &__description {
+  font-weight: 400;
+  text-align: center;
+    font-size: 1rem;
+  margin: 0 auto;
+  @include desktop { 
+    text-align: left;
+    margin: 0 auto 0 0;
+  }
+ }
+
+  &__description--home { 
+    @include desktop { 
+    max-width: 70%;
+  }
+ }
+  &__img-mob {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  display: block;
+
+      @include desktop{ 
+    display: none;
+  }
+  } 
+  &__img-mob img { 
+      border-radius: 1.25rem;
+  }
+
+    &__img-desk img { 
+      border-radius: 1.25rem;
+  }
+  &__img-desk {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    display: none;
+    @include desktop{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ }
+
+ &__button { 
+  margin: 0 auto;
+
+  @include desktop { 
+        margin: 0 auto 0 0;
+  }
+}
+
+}
+
+
+.hero--bg { 
+background:
+  linear-gradient(rgba(0, 0, 0, 0.614), rgba(30, 30, 30, 0.65)),
+  url('../img/hero__img.webp') center/cover no-repeat;
+}
+
+.hero--artiklar { 
+  background:
+  linear-gradient(rgba(0, 0, 0, 0.614), rgba(30, 30, 30, 0.65)),
+  url('../img/artiklar-1.webp') center/cover no-repeat;
+
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}
