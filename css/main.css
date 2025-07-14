@@ -150,7 +150,6 @@ address {
 }
 
 .hero {
-  min-height: 46.875rem;
   background-color: #1E1E1E;
   color: #f6f6f6;
 }
@@ -273,7 +272,6 @@ address {
 }
 
 .hero--thank-you {
-  padding-top: 100px;
   background: linear-gradient(rgba(0, 0, 0, 0.814), rgba(30, 30, 30, 0.65)), url("../img/team-photo-7.webp") center/cover no-repeat;
 }
 .hero--thank-you .hero__top {
@@ -285,13 +283,17 @@ address {
   text-align: center;
 }
 .hero--thank-you .hero__content {
-  max-width: 48rem;
+  max-width: 55rem;
   margin: 0 auto;
 }
 .hero--thank-you .button-wrapper {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+}
+
+.hero--thank-you-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.814), rgba(30, 30, 30, 0.65)), url("../img/team-photo-6.webp") center/cover no-repeat;
 }
 
 .button-wrapper {
@@ -2157,6 +2159,10 @@ header > div > a.button.button--cta.btn.desk-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.features__card-img.toalettstol {
+  height: auto;
 }
 
 .features__card-img-big {
