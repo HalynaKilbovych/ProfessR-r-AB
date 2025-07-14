@@ -130,6 +130,32 @@ background:
 
 }
 
+.hero--thank-you { 
+  padding-top: 100px;
+    background:
+  linear-gradient(rgba(0, 0, 0, 0.814), rgba(30, 30, 30, 0.65)),
+  url('../img/team-photo-7.webp') center/cover no-repeat;
+
+  & .hero__top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+    & .hero__content {
+      max-width: 48rem;
+      margin: 0 auto;
+    }
+
+        & .button-wrapper {
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+}
 .button-wrapper {
   display: flex;
   flex-direction: column;

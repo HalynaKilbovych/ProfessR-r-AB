@@ -1,11 +1,595 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beställningsformulär</title>
-    <!-- Styles -->
-  <link rel="stylesheet" href="../css/main.min.css">
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Om oss – ProfessRör AB | Familjeägt VVS-företag i Uppsala & Knivsta</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="ProfessRör är ett familjeägt VVS-företag i Knivsta & Uppsala med 30+ års erfarenhet. Personlig service, jour 24/7 och en av Sveriges 10 bästa rörmokare enligt Reco.">
+  <meta name="keywords" content="Rörmokare Uppsala, Rörmokare Knivsta, VVS jour Uppsala, fast pris VVS" >
+  <meta name="author" content="ProfessRör">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.professror.se/">
+
+  <!-- Favicon -->
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+
+    <!-- Recommended format -->
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+
+    <!-- Apple Touch Icon (optional for iOS devices) -->
+    <link rel="apple-touch-icon" href="../img/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Om oss – ProfessRör AB | Familjeägt VVS-företag i Uppsala & Knivsta">
+  <meta property="og:description" content="ProfessRör är ett familjeägt VVS-företag i Knivsta & Uppsala med 30+ års erfarenhet. Personlig service, jour 24/7 och en av Sveriges 10 bästa rörmokare enligt Reco.">
+  <meta property="og:url" content="https://www.professror.se/" >
+  <meta property="og:image" content="../img/Open Graph/home.webp">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:site_name" content="ProfessRör" >
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" >
+  <meta name="twitter:title" content="Om oss – ProfessRör AB | Familjeägt VVS-företag i Uppsala & Knivsta">
+  <meta name="twitter:description" content="ProfessRör är ett familjeägt VVS-företag i Knivsta & Uppsala med 30+ års erfarenhet. Personlig service, jour 24/7 och en av Sveriges 10 bästa rörmokare enligt Reco.">
+  <meta name="twitter:image" content="../img/Open Graph/home.webp" >
+
+  <!-- Schema.org: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ProfessRör",
+    "image": "https://www.professror.se/img/Logo-Whote-Red.svg",
+    "url": "https://www.professror.se",
+    "telephone": "018 26 22 62",
+    "email": "kontakt@professror.se",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Exempelgatan 1",
+      "addressLocality": "Knivsta",
+      "addressRegion": "Uppsala",
+      "postalCode": "74130",
+      "addressCountry": "SE"
+    },
+    "areaServed": {
+      "@type": "Place",
+      "name": "Uppsala och Knivsta"
+    },
+    "priceRange": "SEK",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ]
+  }
+  </script>
+
+
+  <link rel="preload" href="../fonts/montserrat-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/montserrat-v30-latin-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <style>
+        
+        @font-face {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("../fonts/montserrat-v30-latin-regular.woff2") format("woff2");
+        }
+      
+        @font-face {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url("../fonts/montserrat-v30-latin-800.woff2") format("woff2");
+        }
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+        margin: 0;
+        }
+
+        ul {
+        margin: 0;
+        padding: 0;
+        }
+
+        body {
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        color: var(--titleColor);
+        margin: 0;
+        }
+
+        img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        }
+
+        
+        .link {
+        text-decoration: none;
+        color: inherit;
+        }
+
+       
+        *,
+        *::before,
+        *::after {
+        box-sizing: border-box;
+        }
+
+        :root {
+        --titleColor: #0F0F0F;
+        --secondaryTitleColor: #FFFFFF;
+        --textColor: #242424;
+        --accentColor: #b30000;
+        --backgroundColor: #111319;
+        --background-transparent: #222222e7;
+        --gap: 30px;
+        --gap-card: .625rem;
+        --transition: cubic-bezier(0.4, 0, 0.2, 1);
+        --duration: 250ms;
+        }
+
+        .icon,
+        .link,
+        .btn {
+        transition: color var(--duration) var(--transition), background-color var(--duration) var(--transition);
+        }
+
+        .link--red {
+        color: var(--accentColor);
+        font-weight: 700;
+        }
+
+        .link:hover,
+        .link:focus,
+        .btn:hover,
+        .btn:focus,
+        .icon:hover,
+        .icon:focus,
+        .button-prev:hover,
+        .button-prev:focus .button-next:hover,
+        .button-next:focus {
+        color: var(--accentColor);
+        }
+
+        a { 
+            font-weight: 400;
+        }
+
+        .visually-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        -webkit-clip-path: inset(50%);
+                clip-path: inset(50%);
+        margin: -1px;
+        }
+        .btn {
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        .button--cta {
+        background-color: var(--accentColor);
+        color: white;
+        padding: 17px 1.25rem;
+        border-radius: 3.125rem;
+        max-width: 21.25rem;
+        text-align: center;
+        font-weight: bold;
+        display: block;
+        text-transform: uppercase;
+        transition: 250ms all var(--transition);
+        border: 0.0625rem solid var(--accentColor);
+        }
+        .button--cta:hover, .button--cta:focus {
+        color: white;
+        background-color: #940000;
+        border: 0.0625rem solid #940000;
+        }
+
+        .button--secondary {
+        background-color: transparent;
+        color: var(--accentColor);
+        border: 0.0625rem solid var(--accentColor);
+        }
+
+        .button--white {
+        background-color: transparent;
+        color: var(--secondaryTitleColor);
+        border: 0.0625rem solid var(--secondaryTitleColor);
+        }
+        .button--white:hover, .button--white:focus {
+        color: var(--accentColor);
+        background-color: #e6e6e6;
+        border: 0.0625rem solid #e6e6e6;
+        }
+
+        .container {
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+        max-width: 100%;
+        }
+        @media screen and (min-width: 520px) and (max-width: 767px) {
+        .container {
+            max-width: 480px;
+        }
+        }
+       
+
+        .section {
+        margin: 0 auto;
+        padding: 3.125rem 0;
+        }
+        
+        .hero {
+        min-height: 46.875rem;
+        background-color: #1E1E1E;
+        color: #f6f6f6;
+        }
+        @media screen and (min-width: 768px) {
+        .hero__container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 3.125rem;
+        }
+        }
+        
+        .hero__title--home {
+        max-width: 18.75rem;
+        }
+        @media screen and (min-width: 768px) {
+        .hero__title--home {
+            max-width: 90%;
+        }
+        }
+        .hero__subtitle {
+        font-weight: 400;
+        font-size: 1rem;
+        }
+        @media screen and (min-width: 1200px) {
+        .hero__subtitle--home {
+            max-width: 60%;
+        }
+        }
+        .hero__description {
+        font-weight: 400;
+        text-align: center;
+        font-size: 1rem;
+        margin: 0 auto;
+        }
+        @media screen and (min-width: 1200px) {
+        .hero__description {
+            text-align: left;
+            margin: 0 auto 0 0;
+        }
+        }
+        @media screen and (min-width: 1200px) {
+        .hero__description--home {
+            max-width: 70%;
+        }
+        }
+        .hero__img-mob {
+        border-radius: 1.25rem;
+        overflow: hidden;
+        display: block;
+        }
+        @media screen and (min-width: 1200px) {
+        .hero__img-mob {
+            display: none;
+        }
+        }
+        .hero__img-mob img {
+        border-radius: 1.25rem;
+        }
+        .hero__img-desk img {
+        border-radius: 1.25rem;
+        }
+        .hero__img-desk {
+        border-radius: 1.25rem;
+        overflow: hidden;
+        display: none;
+        }
+        @media screen and (min-width: 1200px) {
+        .hero__img-desk {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        }
+        .hero__button {
+        margin: 0 auto;
+        }
+        @media screen and (min-width: 1200px) {
+        .hero__button {
+            margin: 0 auto 0 0;
+        }
+        }
+
+
+        .button-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        }
+        @media screen and (min-width: 768px) {
+        .button-wrapper {
+            flex-direction: row;
+        }
+        }
+
+        .header {
+        background-color: var(--backgroundColor);
+        color: var(--secondaryTitleColor);
+        padding: 0.625rem 0;
+        font-size: 0.75rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        }
+        @media screen and (min-width: 768px) {
+        .header__logo {
+            max-width: 10.625rem;
+        }
+        }
+
+        .logo {
+        width: 150px;
+        height: auto;
+        display: block;
+        }
+        @media screen and (min-width: 1200px) {
+        .logo {
+            width: 250px;
+        }
+        }
+
+        .header__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        }
+
+        .header__container p {
+        background-color: var(--backgroundColor);
+        color: var(--secondaryTitleColor);
+        }
+
+        .menu-toggle {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        right: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 999;
+        }
+        .menu-toggle__line {
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: white;
+        border-radius: 2px;
+        transition: all var(--duration) var(--transition);
+        transform-origin: center;
+        }
+        .menu-toggle__line:nth-child(1) {
+        top: 8px;
+        }
+        .menu-toggle__line:nth-child(2) {
+        top: 15px;
+        }
+        .menu-toggle__line:nth-child(3) {
+        top: 22px;
+        }
+        .menu-toggle.is-active .menu-toggle__line:nth-child(1) {
+        transform: rotate(45deg);
+        top: 15px;
+        }
+        .menu-toggle.is-active .menu-toggle__line:nth-child(2) {
+        opacity: 0;
+        }
+        .menu-toggle.is-active .menu-toggle__line:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 15px;
+        }
+      
+
+        .contact {
+        margin-right: 2.5rem;
+        }
+        @media screen and (min-width: 1200px) {
+        .contact {
+            margin: 0 0.5rem 0 2.5rem;
+        }
+        }
+        .contact__list {
+        display: flex;
+        gap: 0.625rem;
+        align-items: center;
+        }
+        @media screen and (min-width: 1200px) {
+        .contact__list {
+            gap: 0.9375rem;
+        }
+        }
+        .contact__list--company {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        justify-content: center;
+        }
+        .contact__item {
+        display: flex;
+        align-items: center;
+        gap: 0.1875rem;
+        flex-direction: column;
+        }
+        .contact__link {
+        display: flex;
+        align-items: center;
+        gap: 0.3125rem;
+        padding: 0.625rem 0;
+        }
+        .contact__link p {
+        display: none;
+        }
+
+        .contact__link--company {
+        display: flex;
+        align-items: center;
+        gap: 0.3125rem;
+        }
+
+        .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--backgroundColor);
+        padding: 1rem;
+        display: none;
+        border-radius: 0.625rem;
+        flex-direction: column;
+        gap: 1rem;
+        z-index: 10;
+        }
+        .menu__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        }
+        .menu__link {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.3125rem;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        padding: 0.625rem;
+        font-family: "Montserrat", sans-serif;
+        color: var(--secondaryTitleColor);
+        transition: color var(--duration) var(--transition);
+        }
+        .menu__link .menu__arrow {
+        transition: transform var(--duration) var(--transition);
+        }
+        .menu__link .menu__arrow path {
+        stroke: var(--secondaryTitleColor);
+        transition: stroke var(--duration) var(--transition);
+        }
+        .menu__link[aria-expanded=true] {
+        color: var(--accentColor);
+        }
+        .menu__link[aria-expanded=true] .menu__arrow {
+        transform: rotate(90deg);
+        }
+        .menu__link[aria-expanded=true] .menu__arrow path {
+        stroke: var(--accentColor);
+        }
+
+        .menu.is-open {
+        display: flex;
+        width: 80%;
+        margin: 0.625rem auto 0;
+        max-width: 18.75rem;
+        }
+        
+        .submenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+        }
+        .submenu.is-open {
+        display: block;
+        padding: 0.625rem 1.25rem;
+        color: #E0E0E0;
+        }
+        .submenu li {
+        margin-bottom: 0.5rem;
+        }
+        .submenu li a {
+        color: var(--secondaryTitleColor);
+        transition: color var(--transition);
+        }
+        .submenu li a:hover {
+        color: var(--accentColor);
+        }
+
+        .desk-btn {
+        display: none;
+        }
+
+        header > div > a.button.button--cta.btn.desk-btn {
+        display: none;
+        }
+
+        .icon-email {
+        width: 1.25rem;
+        height: 1.1875rem;
+        transition: width var(--duration) var(--transition);
+        }
+        @media screen and (min-width: 520px) and (max-width: 767px) {
+        .icon-email {
+            width: 0.5625rem;
+            height: 0.5rem;
+        }
+        }
+        @media screen and (min-width: 1200px) {
+        .icon-email {
+            width: 1rem;
+            height: 0.875rem;
+        }
+        }
+
+        .icon-phone {
+        width: 1.25rem;
+        height: 1.1875rem;
+        transition: width var(--duration) var(--transition);
+        }
+        
+    </style>
+    <link rel="stylesheet" href="../css/main.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../css/main.min.css"></noscript>
 </head>
 <body >
     <header class="header"> 
@@ -131,167 +715,21 @@
     </header>
 
     <main>
-        <section class="order-form section--price">
-        <div class="container order-form__container">
-            <h2 class="order-form__title">Skriv in dina uppgifter</h2>
+            <section class="hero section hero--thank-you" style="min-height: auto;">
+                    <div class="container hero__container">
+                        <div class="hero__content">
+                            <div class="hero__top">
+                                <h1 class="title__h1 hero__title" style="font-size: clamp(1.85rem, 5vw, 3.2rem);">Tack för din förfrågan – VVS-jour Uppsala & Knivsta </h1>
+                                <h2 class="hero__subtitle center">Vi har mottagit ditt meddelande och en VVS-specialist i Uppsala & Knivsta kontaktar dig snart. Vi är alltid redo att hjälpa dig med akut VVS-jour och professionell service.</h2>
+                            </div>
 
-            <form class="form" id="orderForm" action="https://formspree.io/f/mldlrbae" method="POST">
-
-            <!-- 1. Kontaktuppgifter -->
-            <div class="form__group form__group--grid">
-                <div class="form__field">
-                <label class="form__label" for="firstName">Namn *</label>
-                <input class="form__input" type="text" id="firstName" name="firstName" required>
-                </div>
-                <div class="form__field">
-                <label class="form__label" for="lastName">Efternamn *</label>
-                <input class="form__input" type="text" id="lastName" name="lastName" required>
-                </div>
-            </div>
-
-            <div class="form__field">
-                <label class="form__label" for="address">Adress *</label>
-                <input class="form__input" type="text" id="address" name="address" required placeholder="Google Maps Autocomplete">
-            </div>
-
-            <div class="form__group form__group--grid">
-                <div class="form__field">
-                <label class="form__label" for="email">E-post *</label>
-                <input class="form__input" type="email" id="email" name="email" required>
-                </div>
-                <div class="form__field">
-                <label class="form__label" for="phone">Telefonnummer *</label>
-                <input class="form__input" type="tel" id="phone" name="phone" required>
-                </div>
-            </div>
-
-            <hr class="form__separator">
-
-            <!-- 3. Välj tjänst -->
-            <div class="form__field">
-                <label class="form__label" for="service">Välj tjänst *</label>
-                <select class="form__select" id="service" name="service" required>
-                <option value="">Välj</option>
-                <option>Byta blandare</option>
-                <option>Byta toalettstol</option>
-                <option>Byta handfat</option>
-                <option>Byta vattenmätarkonsol</option>
-                <option>Byta varmvattenberedare</option>
-                <option>Stopp i avlopp</option>
-                <option>Rörservice</option>
-                <option>VVS-jour</option>
-                <option>Vattenpumpar</option>
-                <option>Vattenburen värme</option>
-                <option>Installera tvättmaskin</option>
-                <option>Installera diskmaskin </option>
-                <option>Montering av duschväggar</option>
-                </select>
-            </div>
-
-            <!-- 4. Vad behöver du hjälp med -->
-            <div class="form__field">
-                <label class="form__label" for="helpType">Vad behöver du hjälp med? *</label>
-                <select class="form__select" id="helpType" name="helpType" required>
-                <option value="">Välj</option>
-                <option>Reparation</option>
-                <option>Nyinstallation</option>
-                <option>Service</option>
-                <option>Byte</option>
-                <option>Annat</option>
-                </select>
-            </div>
-
-            <hr class="form__separator">
-
-            <!-- 5. ROT-avdrag -->
-            <div class="form__field">
-                <span class="form__label">Söker du ROT-avdrag? *</span>
-                <div class="form__radio-group">
-                <label class="form__radio">
-                    <input type="radio" name="rot" value="ja" required>
-                    <span>Ja</span>
-                </label>
-                <label class="form__radio">
-                    <input type="radio" name="rot" value="nej">
-                    <span>Nej</span>
-                </label>
-                </div>
-            </div>
-
-            <!-- 6. ROT-detaljer (conditionally visible) -->
-            <div class="form__conditional rot-details is-hidden">
-                <div class="rot-details__type">
-                <span class="rot-details__label">Typ av bostad</span>
-                <div class="rot-details__buttons">
-                    <button type="button" class="rot-details__button" data-type="villa">Villa</button>
-                    <button type="button" class="rot-details__button" data-type="bostadsratt">Bostadsrätt</button>
-                </div>
-                </div>
-
-                <div class="rot-details__fields rot-details__fields--villa is-hidden">
-                <div class="form__field">
-                    <input class="form__input" type="text" name="personnummer" placeholder="Personnummer">
-                </div>
-                <div class="form__field">
-                    <input class="form__input" type="text" name="Fastighetsbeteckning" placeholder="Fastighetsbeteckning">
-                </div>
-                </div>
-
-                <div class="rot-details__fields rot-details__fields--bostadsratt is-hidden">
-                <div class="form__field">
-                    <input class="form__input" type="text" name="personnummer" placeholder="Personnummer">
-                </div>
-                <div class="form__field">
-                    <input class="form__input" type="text" name="Föreningens organisationsnummer" placeholder="Föreningens organisationsnummer">
-                </div>
-                <div class="form__field">
-                    <input class="form__input" type="text" name="Lägenhetsnummer" placeholder="Lägenhetsnummer">
-                </div>
-                </div>
-            </div>
-
-            <hr class="form__separator">
-
-            <!-- 7. Datum och tid -->
-            <div class="form__group form__group--grid">
-                <div class="form__field">
-                <label class="form__label" for="date">Välj önskat datum *</label>
-                <input class="form__input" type="date" id="date" name="date" required>
-                </div>
-                <div class="form__field">
-                <label class="form__label" for="time">Välj tid *</label>
-                <select class="form__select" id="time" name="time" required>
-                    <option value="">Välj</option>
-                    <option>Förmiddag (07:00–12:00)</option>
-                    <option>Eftermiddag (12:00–16:00)</option>
-                </select>
-                </div>
-            </div>
-
-            <!-- 8. Beskrivning -->
-            <div class="form__field">
-                <label class="form__label" for="description">Beskriv ditt ärende (max 500 tecken)</label>
-                <textarea class="form__textarea" id="description" name="description" maxlength="500"></textarea>
-            </div>
-
-            <!-- 9. Upload -->
-            <div class="form__field">
-                <label class="form__label" for="fileUpload">Lägg till bilder eller filer</label>
-                <input class="form__input" type="file" id="fileUpload" name="files" multiple>
-            </div>
-
-            <!-- 10. Consent -->
-            <div class="form__field form__field--checkbox">
-                <label class="form__checkbox">
-                <input type="checkbox" required>
-                <span>Jag godkänner villkoren för installationen</span>
-                </label>
-            </div>
-
-            <button type="submit" class="form__submit button button--cta btn">SKICKA</button>
-            </form>
-        </div>
-        </section>
+                                <div class="button-wrapper">
+                                    <a style="font-weight: 400;" href="../index.html" class="button button--cta btn">Tillbaka till startsidan</a>
+                                    <a style="font-weight: 400;" href="../index.html#faq-home" class="button button--cta button--white btn">VANLIGA FRÅGOR</a>
+                                </div>
+                        </div>
+                    </div>
+            </section>
     </main>
 
     <footer class="site-footer">

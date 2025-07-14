@@ -272,6 +272,28 @@ address {
   background: linear-gradient(rgba(0, 0, 0, 0.614), rgba(30, 30, 30, 0.65)), url("../img/artiklar-1.webp") center/cover no-repeat;
 }
 
+.hero--thank-you {
+  padding-top: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.814), rgba(30, 30, 30, 0.65)), url("../img/team-photo-7.webp") center/cover no-repeat;
+}
+.hero--thank-you .hero__top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero--thank-you .hero__content {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.hero--thank-you .button-wrapper {
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
 .button-wrapper {
   display: flex;
   flex-direction: column;
