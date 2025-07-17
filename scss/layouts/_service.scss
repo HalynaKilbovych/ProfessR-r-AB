@@ -322,3 +322,37 @@
   margin-top: 0.25rem;
   display: block;
 }
+
+.call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e40000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(228, 0, 0, 0.7);
+  animation: glow 2s infinite ease-in-out;
+
+  @include desktop { 
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  right: 30px;
+  }
+}
+
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(228, 0, 0, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(228, 0, 0, 1);
+  }
+}
