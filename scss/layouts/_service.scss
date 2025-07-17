@@ -295,3 +295,30 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+
+.form__input.has-error,
+.form__select.has-error,
+.form__textarea.has-error {
+  border: 2px solid #e53935;
+  background-color: #fff5f5;
+}
+
+.form__error-message {
+  color: #e53935;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.has-error {
+  border-color: #e53935;
+  background-color: #fff5f5;
+}
+
+.form__error-message {
+  color: #e53935;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}

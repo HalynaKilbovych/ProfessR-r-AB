@@ -767,6 +767,10 @@ button, input, option, select {
   font-family: "Montserrat", sans-serif;
 }
 
+.btn--center {
+  margin: 0 auto;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -1538,6 +1542,12 @@ header > div > a.button.button--cta.btn.desk-btn {
   background: linear-gradient(rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.8)), url("../img/team-photo-6.webp") center/cover no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .сta-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.063), rgba(0, 0, 0, 0.5)), url("../img/team-photo-6-1.webp") center/cover no-repeat;
+    background-size: cover;
+  }
+}
 
 .cta--gray {
   background: #f6f6f6;
@@ -2012,6 +2022,34 @@ header > div > a.button.button--cta.btn.desk-btn {
   background-color: #f9f9f9;
 }
 
+.fast-links__item--bg-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(30, 30, 30, 0.65)), url("../img/artiklar-1.webp") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #e1e1e1;
+}
+
+.fast-links__item--bg-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(30, 30, 30, 0.65)), url("../img/artiklar-2.webp") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #e1e1e1;
+}
+
+.fast-links__item--bg-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(30, 30, 30, 0.65)), url("../img/artiklar-3.webp") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #e1e1e1;
+}
+
+.fast-links__item--bg-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(30, 30, 30, 0.65)), url("../img/artiklar-4.webp") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #e1e1e1;
+}
+
 .problem {
   background-color: #f6f6f6;
 }
@@ -2295,6 +2333,32 @@ header > div > a.button.button--cta.btn.desk-btn {
   margin-top: 1.875rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.form__input.has-error,
+.form__select.has-error,
+.form__textarea.has-error {
+  border: 2px solid #e53935;
+  background-color: #fff5f5;
+}
+
+.form__error-message {
+  color: #e53935;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.has-error {
+  border-color: #e53935;
+  background-color: #fff5f5;
+}
+
+.form__error-message {
+  color: #e53935;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
 }
 
 .order-form__container {

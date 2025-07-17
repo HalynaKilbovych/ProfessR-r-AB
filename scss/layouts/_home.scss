@@ -189,6 +189,12 @@
     url("../img/team-photo-6.webp") center / cover no-repeat;
   background-size: cover;
 
+  @include tablet { 
+background: linear-gradient(rgba(0, 0, 0, 0.063), rgba(0, 0, 0, 0.5)),
+    url("../img/team-photo-6-1.webp") center / cover no-repeat;
+  background-size: cover;
+  }
+
 }
 
 .cta--gray { 
@@ -695,4 +701,42 @@ color: #1E1E1E;
 
 .interviews { 
   background-color: #f9f9f9;
+}
+
+.fast-links__item--bg-1 { 
+  background:
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(30, 30, 30, 0.65)),
+  url('../img/artiklar-1.webp') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #e1e1e1;
+}
+
+.fast-links__item--bg-2 {
+    background:
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(30, 30, 30, 0.65)),
+  url('../img/artiklar-2.webp') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #e1e1e1;
+
+}
+.fast-links__item--bg-3 { 
+    background:
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(30, 30, 30, 0.65)),
+  url('../img/artiklar-3.webp') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #e1e1e1;
+
+}
+
+.fast-links__item--bg-4 { 
+    background:
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(30, 30, 30, 0.65)),
+  url('../img/artiklar-4.webp') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #e1e1e1;
+
 }

@@ -200,6 +200,10 @@ button, input, option, select {
   font-family: "Montserrat", sans-serif;
 }
 
+.btn--center {
+  margin: 0 auto;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
